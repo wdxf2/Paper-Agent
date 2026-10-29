@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+    <marker id="arrow-accent" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#D97706"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">17 / UML 顺序图</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">UML 顺序图：</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">从主题输入到引用校验</text>
+  </g>
+  <g id="sequence-diagram" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">SEQUENCE / MAIN FLOW + ALT</text>
+    <g id="participant-researcher"><rect x="84" y="230" width="170" height="52" rx="6" fill="#0E3B43"/><text x="169" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#F7F9F6">研究者</text></g>
+    <g id="participant-ui"><rect x="270" y="230" width="170" height="52" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/><text x="355" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">Web UI</text></g>
+    <g id="participant-orchestrator"><rect x="456" y="230" width="170" height="52" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/><text x="541" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">编排器</text></g>
+    <g id="participant-rag"><rect x="642" y="230" width="170" height="52" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/><text x="727" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">检索 / RAG</text></g>
+    <g id="participant-writer"><rect x="828" y="230" width="170" height="52" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/><text x="913" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">撰写</text></g>
+    <g id="participant-verifier"><rect x="1014" y="230" width="170" height="52" rx="6" fill="#FFF3E3" stroke="#D97706" stroke-width="1.4"/><text x="1099" y="262" text-anchor="middle" font-size="18" font-weight="bold" fill="#8B4A16">引用校验</text></g>
+    <path d="M169 282V600 M355 282V600 M541 282V600 M727 282V600 M913 282V600 M1099 282V600" fill="none" stroke="#2F6F7E" stroke-width="1" stroke-dasharray="4,6"/>
+    <line x1="169" y1="320" x2="350" y2="320" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="178" y="310" font-size="14" fill="#0E3B43">输入主题与约束</text>
+    <line x1="355" y1="354" x2="536" y2="354" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="364" y="344" font-size="14" fill="#0E3B43">POST /reviews</text>
+    <line x1="541" y1="388" x2="722" y2="388" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="550" y="378" font-size="14" fill="#0E3B43">SearchTask</text>
+    <line x1="727" y1="422" x2="546" y2="422" stroke="#0E3B43" stroke-width="1.5" stroke-dasharray="7,5" marker-end="url(#arrow)"/>
+    <text x="594" y="412" font-size="14" fill="#5B6770">evidence[]</text>
+    <line x1="541" y1="456" x2="908" y2="456" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="550" y="446" font-size="14" fill="#0E3B43">draft(outline, evidence)</text>
+    <line x1="913" y1="490" x2="1094" y2="490" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="922" y="480" font-size="14" fill="#0E3B43">claims</text>
+    <line x1="1099" y1="520" x2="546" y2="520" stroke="#0E3B43" stroke-width="1.5" stroke-dasharray="7,5" marker-end="url(#arrow)"/>
+    <text x="742" y="510" font-size="14" fill="#5B6770">verificationPassed</text>
+    <rect x="820" y="540" width="364" height="64" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="6,4"/>
+    <text x="836" y="558" font-size="14" font-weight="bold" fill="#8B4A16">alt [unsupported claims]</text>
+    <line x1="1099" y1="582" x2="918" y2="582" stroke="#D97706" stroke-width="1.4" stroke-dasharray="7,5" marker-end="url(#arrow-accent)"/>
+    <text x="970" y="574" font-size="14" fill="#8B4A16">定向改写 / 补充检索</text>
+    <text x="96" y="594" font-size="14" fill="#5B6770">REST 创建任务 · SSE 推送进度 · evidenceId 持久化 · 校验失败不被静默忽略</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">UML 顺序图附录 · 主流程、返回消息与失败分支</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P17 / 17</text>
+  </g>
+</svg>

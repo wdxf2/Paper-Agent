@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+    <marker id="arrow-secondary" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2F6F7E"/>    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">05 / 总体方案</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">三层协作：</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">智能体、证据与应用闭环</text>
+  </g>
+  <g id="architecture" data-pptx-bounds="64 176 760 420">
+    <rect x="64" y="176" width="760" height="420" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">SYSTEM CROSS-SECTION</text>
+    <rect x="96" y="230" width="696" height="82" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+    <text x="122" y="262" font-size="24" font-weight="bold" fill="#0E3B43">应用层 / WEB PROTOTYPE</text>
+    <text x="122" y="292" font-size="18" fill="#5B6770">主题配置 · 进度监控 · 证据面板 · 报告编辑与导出</text>
+    <use data-icon="tabler-outline/layout-dashboard" x="718" y="246" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <line x1="444" y1="312" x2="444" y2="344" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="460" y1="344" x2="460" y2="312" stroke="#2F6F7E" stroke-width="1.5" marker-end="url(#arrow-secondary)"/>
+    <rect x="96" y="334" width="696" height="96" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+    <text x="122" y="366" font-size="24" font-weight="bold" fill="#0E3B43">协作层 / CREWAI TASK GRAPH</text>
+    <g id="agents-inline">
+      <rect x="122" y="382" width="92" height="30" rx="6" fill="#E8EFEA"/>
+      <text x="168" y="403" text-anchor="middle" font-size="14" fill="#0E3B43">协调</text>
+      <rect x="226" y="382" width="92" height="30" rx="6" fill="#E8EFEA"/>
+      <text x="272" y="403" text-anchor="middle" font-size="14" fill="#0E3B43">检索</text>
+      <rect x="330" y="382" width="92" height="30" rx="6" fill="#E8EFEA"/>
+      <text x="376" y="403" text-anchor="middle" font-size="14" fill="#0E3B43">分析</text>
+      <rect x="434" y="382" width="92" height="30" rx="6" fill="#E8EFEA"/>
+      <text x="480" y="403" text-anchor="middle" font-size="14" fill="#0E3B43">对比</text>
+      <rect x="538" y="382" width="92" height="30" rx="6" fill="#E8EFEA"/>
+      <text x="584" y="403" text-anchor="middle" font-size="14" fill="#0E3B43">撰写</text>
+      <rect x="642" y="382" width="92" height="30" rx="6" fill="#FFF3E3" stroke="#D97706"/>
+      <text x="688" y="403" text-anchor="middle" font-size="14" fill="#8B4A16">校验</text>
+    </g>
+    <use data-icon="tabler-outline/network" x="718" y="350" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <line x1="444" y1="430" x2="444" y2="454" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="460" y1="454" x2="460" y2="430" stroke="#2F6F7E" stroke-width="1.5" marker-end="url(#arrow-secondary)"/>
+    <rect x="96" y="450" width="696" height="118" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+    <text x="122" y="482" font-size="24" font-weight="bold" fill="#0E3B43">证据层 / HYBRID RAG</text>
+    <text x="122" y="514" font-size="18" fill="#5B6770">arXiv / PubMed → 章节切分 → BM25 + 稠密检索 → 重排序 → 证据库</text>
+    <rect x="122" y="530" width="540" height="24" rx="6" fill="#E8EFEA"/>
+    <text x="142" y="547" font-size="14" fill="#0E3B43">PostgreSQL + pgvector · object store · citation graph</text>
+    <use data-icon="tabler-outline/database" x="718" y="486" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <text x="96" y="588" font-size="14" fill="#5B6770">EXTERNAL: LLM gateway · arXiv · PubMed · Crossref</text>
+  </g>
+  <g id="design-rules" data-pptx-bounds="848 176 368 420">
+    <rect x="848" y="176" width="368" height="420" rx="12" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="880" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">DESIGN RULES</text>
+    <text x="880" y="254" font-size="30" font-weight="bold" fill="#0E3B43">协作必须可检查</text>
+    <g id="rule-artifacts">
+      <use data-icon="tabler-outline/binary-tree" x="880" y="290" width="36" height="36" fill="#0E3B43" stroke-width="2"/>
+      <text x="934" y="315" font-size="24" font-weight="bold" fill="#1F2933">结构化产物</text>
+      <text x="934" y="342" font-size="18" fill="#5B6770">Plan / Retrieval / Analysis</text>
+      <text x="934" y="368" font-size="18" fill="#5B6770">Draft / Verification</text>
+    </g>
+    <g id="rule-evidence">
+      <use data-icon="tabler-outline/link" x="880" y="386" width="36" height="36" fill="#0E3B43" stroke-width="2"/>
+      <text x="934" y="411" font-size="24" font-weight="bold" fill="#1F2933">证据优先</text>
+      <text x="934" y="438" font-size="18" fill="#5B6770">claim 绑定 evidenceId</text>
+      <text x="934" y="464" font-size="18" fill="#5B6770">与原文定位</text>
+    </g>
+    <g id="rule-recovery">
+      <use data-icon="tabler-outline/shield-check" x="880" y="482" width="36" height="36" fill="#D97706" stroke-width="2"/>
+      <text x="934" y="507" font-size="24" font-weight="bold" fill="#1F2933">失败可恢复</text>
+      <text x="934" y="534" font-size="18" fill="#5B6770">检查点、重试与人工复核入口</text>
+    </g>
+    <text x="880" y="576" font-size="18" font-weight="bold" fill="#8B4A16">目标：可交互 · 可追溯 · 可复现</text>
+  </g>
+  <g id="takeaway" data-pptx-bounds="64 610 1152 42">
+    <text x="64" y="640" font-size="24" font-weight="bold" fill="#D97706">从主题输入到报告导出，每一个阶段都有状态、产物和证据可查。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">总体方案 · 三层协作与证据闭环</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P05 / 14</text>
+  </g>
+</svg>
+

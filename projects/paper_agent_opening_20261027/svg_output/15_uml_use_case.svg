@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="dash-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">15 / UML 用例视图</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">UML 用例：</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">研究者的主流程与系统边界</text>
+  </g>
+  <g id="use-case-diagram" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <rect x="260" y="216" width="780" height="330" rx="10" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+    <text x="280" y="242" font-size="18" font-weight="bold" fill="#2F6F7E">科研文献智能综述系统</text>
+    <g id="actor-researcher">
+      <circle cx="128" cy="286" r="18" fill="none" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="128" y1="304" x2="128" y2="356" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="96" y1="326" x2="160" y2="326" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="128" y1="356" x2="100" y2="400" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="128" y1="356" x2="156" y2="400" stroke="#0E3B43" stroke-width="2"/>
+      <text x="128" y="434" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">研究者</text>
+    </g>
+    <g id="actor-admin">
+      <circle cx="1152" cy="286" r="18" fill="none" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="1152" y1="304" x2="1152" y2="356" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="1120" y1="326" x2="1184" y2="326" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="1152" y1="356" x2="1124" y2="400" stroke="#0E3B43" stroke-width="2"/>
+      <line x1="1152" y1="356" x2="1180" y2="400" stroke="#0E3B43" stroke-width="2"/>
+      <text x="1152" y="434" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">管理员</text>
+    </g>
+    <g id="uc-01">
+      <ellipse cx="410" cy="288" rx="90" ry="28" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.2"/>
+      <text x="410" y="294" text-anchor="middle" font-size="18" fill="#1F2933">提交主题与约束</text>
+    </g>
+    <g id="uc-02">
+      <ellipse cx="410" cy="368" rx="90" ry="28" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.2"/>
+      <text x="410" y="374" text-anchor="middle" font-size="18" fill="#1F2933">生成结构化综述</text>
+    </g>
+    <g id="uc-03">
+      <ellipse cx="410" cy="448" rx="90" ry="28" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.2"/>
+      <text x="410" y="454" text-anchor="middle" font-size="18" fill="#1F2933">查看证据与导出</text>
+    </g>
+    <g id="uc-04">
+      <ellipse cx="880" cy="288" rx="90" ry="28" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.2"/>
+      <text x="880" y="294" text-anchor="middle" font-size="18" fill="#1F2933">配置数据源与模型</text>
+    </g>
+    <g id="uc-05">
+      <ellipse cx="880" cy="368" rx="90" ry="28" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.2"/>
+      <text x="880" y="374" text-anchor="middle" font-size="18" fill="#1F2933">监控任务与重试</text>
+    </g>
+    <g id="uc-06">
+      <ellipse cx="640" cy="300" rx="100" ry="28" fill="#FFF3E3" stroke="#D97706" stroke-width="1.2"/>
+      <text x="640" y="306" text-anchor="middle" font-size="18" fill="#8B4A16">检索并规范化文献</text>
+    </g>
+    <g id="uc-07">
+      <ellipse cx="640" cy="430" rx="100" ry="28" fill="#FFF3E3" stroke="#D97706" stroke-width="1.2"/>
+      <text x="640" y="436" text-anchor="middle" font-size="18" fill="#8B4A16">校验声明与引用</text>
+    </g>
+    <line x1="146" y1="326" x2="320" y2="288" stroke="#0E3B43" stroke-width="1.5"/>
+    <line x1="146" y1="340" x2="320" y2="368" stroke="#0E3B43" stroke-width="1.5"/>
+    <line x1="146" y1="354" x2="320" y2="448" stroke="#0E3B43" stroke-width="1.5"/>
+    <line x1="1134" y1="326" x2="970" y2="288" stroke="#0E3B43" stroke-width="1.5"/>
+    <line x1="1134" y1="340" x2="970" y2="368" stroke="#0E3B43" stroke-width="1.5"/>
+    <line x1="500" y1="368" x2="540" y2="312" stroke="#0E3B43" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#dash-arrow)"/>
+    <line x1="500" y1="368" x2="540" y2="422" stroke="#0E3B43" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#dash-arrow)"/>
+    <text x="516" y="334" font-size="14" fill="#2F6F7E">«include»</text>
+    <text x="516" y="414" font-size="14" fill="#2F6F7E">«include»</text>
+    <text x="280" y="526" font-size="18" fill="#5B6770">外部数据源：arXiv / PubMed · 研究者与管理员均为外部参与者</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">UML 用例附录 · 参与者、系统边界与 include 关系</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P15 / 17</text>
+  </g>
+</svg>

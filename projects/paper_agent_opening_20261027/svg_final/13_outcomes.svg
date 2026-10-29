@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">13 / 预期成果</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">交付一套可运行、可评测、</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">可复现的综述系统</text>
+  </g>
+  <g id="outcome-system" data-pptx-bounds="64 200 520 180">
+    <rect x="64" y="200" width="520" height="180" rx="12" fill="#E8EFEA"/>
+    <!-- icon: tabler-outline/layout-dashboard -->
+  <g transform="translate(88, 224) scale(1.75)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+    <path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+    <path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+    <path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+  </g>
+    <text x="146" y="254" font-size="24" font-weight="bold" fill="#0E3B43">可运行的系统</text>
+    <text x="88" y="302" font-size="18" fill="#5B6770">Web 原型 · REST/SSE 接口</text>
+    <text x="88" y="332" font-size="18" fill="#5B6770">RAG 流水线 · Docker 部署</text>
+    <text x="88" y="362" font-size="14" fill="#5B6770">从主题输入到报告导出完整闭环</text>
+  </g>
+  <g id="outcome-eval" data-pptx-bounds="624 200 592 180">
+    <rect x="624" y="200" width="592" height="180" rx="12" fill="#E8EFEA"/>
+    <!-- icon: tabler-outline/report-analytics -->
+  <g transform="translate(648, 224) scale(1.75)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+    <path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" />
+    <path d="M9 17v-5" />
+    <path d="M12 17v-1" />
+    <path d="M15 17v-3" />
+  </g>
+    <text x="706" y="254" font-size="24" font-weight="bold" fill="#0E3B43">可评测的证据包</text>
+    <text x="648" y="302" font-size="18" fill="#5B6770">3 个领域 · 9 个主题 · 关键点清单</text>
+    <text x="648" y="332" font-size="18" fill="#5B6770">引用核验样本 · 自动指标 · 人工评分脚本</text>
+    <text x="648" y="362" font-size="14" fill="#5B6770">四类基线与消融实验可复现</text>
+  </g>
+  <g id="outcome-docs" data-pptx-bounds="64 410 520 180">
+    <rect x="64" y="410" width="520" height="180" rx="12" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+    <!-- icon: tabler-outline/file-text -->
+  <g transform="translate(88, 434) scale(1.75)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+    <path d="M9 9l1 0" />
+    <path d="M9 13l6 0" />
+    <path d="M9 17l6 0" />
+  </g>
+    <text x="146" y="464" font-size="24" font-weight="bold" fill="#0E3B43">可交接的文档</text>
+    <text x="88" y="512" font-size="18" fill="#5B6770">技术报告 · 接口文档</text>
+    <text x="88" y="542" font-size="18" fill="#5B6770">UML 源文件 · 复现实验说明</text>
+    <text x="88" y="572" font-size="14" fill="#5B6770">报告中保留目标值、局限和失败案例</text>
+  </g>
+  <g id="outcome-demo" data-pptx-bounds="624 410 592 180">
+    <rect x="624" y="410" width="592" height="180" rx="12" fill="#FFF3E3" stroke="#D97706" stroke-width="1.5"/>
+    <!-- icon: tabler-outline/target-arrow -->
+  <g transform="translate(648, 434) scale(1.75)" fill="none" stroke="#D97706" stroke-width="2">
+    <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M12 7a5 5 0 1 0 5 5" />
+    <path d="M13 3.055a9 9 0 1 0 7.941 7.945" />
+    <path d="M15 6v3h3l3 -3h-3v-3l-3 3" />
+    <path d="M15 9l-3 3" />
+  </g>
+    <text x="706" y="464" font-size="24" font-weight="bold" fill="#0E3B43">可判断的结果</text>
+    <text x="648" y="512" font-size="18" fill="#8B4A16">端到端演示视频 · 答辩 PPT</text>
+    <text x="648" y="542" font-size="18" fill="#8B4A16">成功案例与失败案例并列</text>
+    <text x="648" y="572" font-size="14" fill="#8B4A16">不选择性展示；报告实测偏差</text>
+  </g>
+  <g id="targets" data-pptx-bounds="64 604 1152 42">
+    <text x="64" y="634" font-size="24" font-weight="bold" fill="#D97706">目标：证据绑定 100% · 引用精度 ≥85% · 覆盖 ≥80% · 专家评分 ≥4.0/5（以实测为准）</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">预期成果 · 系统、证据包、文档与可判断的结果</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P13 / 17</text>
+  </g>
+</svg>
+

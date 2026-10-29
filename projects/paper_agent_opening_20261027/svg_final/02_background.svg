@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 142">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">02 / 研究背景</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">文献越来越多，</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">综述却仍难“说得准、查得到”</text>
+  </g>
+  <g id="pressure-field" data-pptx-bounds="64 176 480 382">
+    <rect x="64" y="176" width="480" height="382" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">供给侧 / PRESSURE</text>
+    <text x="96" y="262" font-size="30" font-weight="bold" fill="#0E3B43">论文增长快于个人跟踪能力</text>
+    <g id="pressure-row-1">
+      <!-- icon: tabler-outline/search -->
+  <g transform="translate(96, 300) scale(1.5)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+    <path d="M21 21l-6 -6" />
+  </g>
+      <text x="150" y="326" font-size="24" font-weight="bold" fill="#1F2933">检索分散</text>
+      <text x="150" y="356" font-size="18" fill="#5B6770">跨库、跨年份、跨版本，需反复筛选</text>
+    </g>
+    <g id="pressure-row-2">
+      <!-- icon: tabler-outline/database -->
+  <g transform="translate(96, 384) scale(1.5)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M4 6a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+    <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+    <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+  </g>
+      <text x="150" y="410" font-size="24" font-weight="bold" fill="#1F2933">全文与元数据不齐</text>
+      <text x="150" y="440" font-size="18" fill="#5B6770">摘要、全文、表格与版本质量不一致</text>
+    </g>
+    <g id="pressure-row-3">
+      <!-- icon: tabler-outline/link -->
+  <g transform="translate(96, 468) scale(1.5)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M9 15l6 -6" />
+    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+    <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+  </g>
+      <text x="150" y="494" font-size="24" font-weight="bold" fill="#1F2933">引用难核验</text>
+      <text x="150" y="524" font-size="18" fill="#5B6770">结论与原文之间缺少稳定定位</text>
+    </g>
+  </g>
+  <g id="need-field" data-pptx-bounds="576 176 640 382">
+    <rect x="576" y="176" width="640" height="382" rx="12" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="608" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">需求侧 / RESEARCHER NEED</text>
+    <text x="608" y="262" font-size="30" font-weight="bold" fill="#0E3B43">研究者要的是一张可核查的领域地图</text>
+    <path d="M608 294H1168" stroke="#BED0C5" stroke-width="1"/>
+    <text x="608" y="334" font-size="24" font-weight="bold" fill="#1F2933">主流程</text>
+    <text x="608" y="374" font-size="24" fill="#1F2933">检索 → 筛选 → 抽取 → 对比 → 写作</text>
+    <text x="608" y="418" font-size="18" fill="#5B6770">人工完成时，真正耗时的不是写，而是整理与核对。</text>
+    <rect x="608" y="450" width="576" height="72" rx="8" fill="#FFF3E3"/>
+    <text x="632" y="480" font-size="18" font-weight="bold" fill="#D97706">关键缺口</text>
+    <text x="632" y="510" font-size="24" font-weight="bold" fill="#0E3B43">引用可追溯 · 观点可比较 · 过程可复现</text>
+  </g>
+  <g id="takeaway" data-pptx-bounds="64 580 1152 62">
+    <text x="64" y="618" font-size="30" font-weight="bold" fill="#D97706">问题的核心是证据链，不是生成速度。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">研究背景 · 从文献压力到证据链问题</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P02 / 17</text>
+  </g>
+</svg>
+
+

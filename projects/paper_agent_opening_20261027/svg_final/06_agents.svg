@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+    <marker id="arrow-accent" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#D97706"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">06 / 多智能体任务图</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">六类智能体按任务图协作，</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">避免自由对话的状态漂移</text>
+  </g>
+  <g id="task-dag" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">TASK DAG / TYPED ARTIFACTS</text>
+    <g id="coordinator-node">
+      <rect x="520" y="230" width="240" height="66" rx="8" fill="#0E3B43"/>
+      <!-- icon: tabler-outline/network -->
+  <g transform="translate(540, 244) scale(1.41667)" fill="none" stroke="#F7F9F6" stroke-width="2">
+    <path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" />
+    <path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" />
+    <path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" />
+    <path d="M6 9h12" />
+    <path d="M3 20h7" />
+    <path d="M14 20h7" />
+    <path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+    <path d="M12 15v3" />
+  </g>
+      <text x="588" y="261" font-size="18" font-weight="bold" fill="#F7F9F6">协调智能体</text>
+      <text x="588" y="282" font-size="14" fill="#CFE0D4">PlanArtifact</text>
+    </g>
+    <path d="M640 296V316 M191 316H1091 M191 316V330 M416 316V330 M641 316V330 M866 316V330 M1091 316V330" fill="none" stroke="#2F6F7E" stroke-width="1.2" stroke-dasharray="4,4"/>
+    <g id="retrieval-node">
+      <rect x="96" y="330" width="190" height="72" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/search -->
+  <g transform="translate(114, 346) scale(1.33333)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+    <path d="M21 21l-6 -6" />
+  </g>
+      <text x="160" y="363" font-size="18" font-weight="bold" fill="#0E3B43">检索</text>
+      <text x="160" y="385" font-size="14" fill="#5B6770">RetrievalArtifact</text>
+    </g>
+    <g id="analysis-node">
+      <rect x="321" y="330" width="190" height="72" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/file-text -->
+  <g transform="translate(339, 346) scale(1.33333)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+    <path d="M9 9l1 0" />
+    <path d="M9 13l6 0" />
+    <path d="M9 17l6 0" />
+  </g>
+      <text x="385" y="363" font-size="18" font-weight="bold" fill="#0E3B43">分析</text>
+      <text x="385" y="385" font-size="14" fill="#5B6770">AnalysisArtifact</text>
+    </g>
+    <g id="comparison-node">
+      <rect x="546" y="330" width="190" height="72" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/binary-tree -->
+  <g transform="translate(564, 346) scale(1.33333)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M11 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M21 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M5.058 18.306l2.88 -4.606" />
+    <path d="M10.061 10.303l2.877 -4.604" />
+    <path d="M10.065 13.705l2.876 4.6" />
+    <path d="M15.063 5.7l2.881 4.61" />
+  </g>
+      <text x="610" y="363" font-size="18" font-weight="bold" fill="#0E3B43">对比</text>
+      <text x="610" y="385" font-size="14" fill="#5B6770">ComparisonArtifact</text>
+    </g>
+    <g id="writer-node">
+      <rect x="771" y="330" width="190" height="72" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/file-text -->
+  <g transform="translate(789, 346) scale(1.33333)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+    <path d="M9 9l1 0" />
+    <path d="M9 13l6 0" />
+    <path d="M9 17l6 0" />
+  </g>
+      <text x="835" y="363" font-size="18" font-weight="bold" fill="#0E3B43">撰写</text>
+      <text x="835" y="385" font-size="14" fill="#5B6770">DraftArtifact</text>
+    </g>
+    <g id="verifier-node">
+      <rect x="996" y="330" width="190" height="72" rx="8" fill="#FFF3E3" stroke="#D97706" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/shield-check -->
+  <g transform="translate(1014, 346) scale(1.33333)" fill="none" stroke="#D97706" stroke-width="2">
+    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+    <path d="M15 19l2 2l4 -4" />
+  </g>
+      <text x="1060" y="363" font-size="18" font-weight="bold" fill="#8B4A16">引用校验</text>
+      <text x="1060" y="385" font-size="14" fill="#8B4A16">VerificationArtifact</text>
+    </g>
+    <line x1="286" y1="366" x2="313" y2="366" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <line x1="511" y1="366" x2="538" y2="366" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <line x1="736" y1="366" x2="763" y2="366" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <line x1="961" y1="366" x2="988" y2="366" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <path d="M1091 402V438H866V402 M1091 438H1091" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-accent)"/>
+    <text x="978" y="458" text-anchor="middle" font-size="18" font-weight="bold" fill="#8B4A16">unsupported → 定向改写 / 补充检索</text>
+    <rect x="96" y="490" width="1090" height="74" rx="8" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.2"/>
+    <text x="120" y="520" font-size="18" font-weight="bold" fill="#0E3B43">工程机制</text>
+    <text x="230" y="520" font-size="18" fill="#5B6770">schema 校验</text>
+    <text x="390" y="520" font-size="18" fill="#5B6770">重试与检查点</text>
+    <text x="590" y="520" font-size="18" fill="#5B6770">共享黑板</text>
+    <text x="760" y="520" font-size="18" fill="#5B6770">预算与超时</text>
+    <text x="940" y="520" font-size="18" fill="#5B6770">人工复核</text>
+    <text x="120" y="548" font-size="14" fill="#5B6770">失败不是静默跳过，而是进入可观察的恢复路径。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">多智能体任务图 · 角色、产物、恢复</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P06 / 17</text>
+  </g>
+</svg>
+

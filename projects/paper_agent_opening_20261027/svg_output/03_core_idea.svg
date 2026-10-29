@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+    <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#5B6770"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">03 / 核心判断</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">把综述从“一次性生成”</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">改造成“可追溯工作流”</text>
+  </g>
+  <g id="before-field" data-pptx-bounds="64 176 500 380">
+    <rect x="64" y="176" width="500" height="380" rx="12" fill="#F1F3F1" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="96" y="214" font-size="18" font-weight="bold" fill="#5B6770" letter-spacing="2">BEFORE / ONE-SHOT</text>
+    <text x="96" y="258" font-size="30" font-weight="bold" fill="#5B6770">一次提示词生成</text>
+    <g id="before-chain">
+      <rect x="96" y="304" width="120" height="56" rx="8" fill="#FFFFFF" stroke="#BED0C5"/>
+      <text x="156" y="338" text-anchor="middle" font-size="18" fill="#1F2933">主题</text>
+      <line x1="216" y1="332" x2="260" y2="332" stroke="#5B6770" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+      <rect x="260" y="304" width="120" height="56" rx="8" fill="#FFFFFF" stroke="#BED0C5"/>
+      <text x="320" y="338" text-anchor="middle" font-size="18" fill="#1F2933">LLM</text>
+      <line x1="380" y1="332" x2="424" y2="332" stroke="#5B6770" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+      <rect x="424" y="304" width="108" height="56" rx="8" fill="#FFFFFF" stroke="#BED0C5"/>
+      <text x="478" y="338" text-anchor="middle" font-size="18" fill="#1F2933">草稿</text>
+    </g>
+    <path d="M96 390H532" stroke="#BED0C5" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="96" y="430" font-size="24" font-weight="bold" fill="#8B4A16">过程不透明</text>
+    <text x="96" y="462" font-size="18" fill="#5B6770">结论从哪来、引用了哪一段，难以回查。</text>
+    <text x="96" y="510" font-size="24" font-weight="bold" fill="#8B4A16">引用难核验</text>
+    <text x="96" y="542" font-size="18" fill="#5B6770">段落级参考文献不能证明具体声明。</text>
+  </g>
+  <g id="after-field" data-pptx-bounds="584 176 632 380">
+    <rect x="584" y="176" width="632" height="380" rx="12" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.5"/>
+    <text x="616" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">AFTER / TRACEABLE FLOW</text>
+    <text x="616" y="258" font-size="30" font-weight="bold" fill="#0E3B43">六段可检查的证据工作流</text>
+    <g id="after-chain-1">
+      <rect x="616" y="300" width="154" height="54" rx="8" fill="#F7F9F6" stroke="#0E3B43"/>
+      <text x="693" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">规划</text>
+      <line x1="770" y1="327" x2="810" y2="327" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <rect x="810" y="300" width="154" height="54" rx="8" fill="#F7F9F6" stroke="#0E3B43"/>
+      <text x="887" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">检索</text>
+      <line x1="964" y1="327" x2="1004" y2="327" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <rect x="1004" y="300" width="154" height="54" rx="8" fill="#F7F9F6" stroke="#0E3B43"/>
+      <text x="1081" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">分析</text>
+    </g>
+    <g id="after-chain-2">
+      <rect x="616" y="386" width="154" height="54" rx="8" fill="#F7F9F6" stroke="#0E3B43"/>
+      <text x="693" y="419" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">对比</text>
+      <line x1="770" y1="413" x2="810" y2="413" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <rect x="810" y="386" width="154" height="54" rx="8" fill="#F7F9F6" stroke="#0E3B43"/>
+      <text x="887" y="419" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">写作</text>
+      <line x1="964" y1="413" x2="1004" y2="413" stroke="#0E3B43" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <rect x="1004" y="386" width="154" height="54" rx="8" fill="#FFF3E3" stroke="#D97706"/>
+      <text x="1081" y="419" text-anchor="middle" font-size="18" font-weight="bold" fill="#8B4A16">校验</text>
+    </g>
+    <text x="616" y="490" font-size="18" fill="#5B6770">每一步都有输入、产物、证据与失败处理。</text>
+    <rect x="616" y="512" width="542" height="34" fill="#0E3B43"/>
+    <text x="887" y="536" text-anchor="middle" font-size="18" font-weight="bold" fill="#F7F9F6">目标：可交互 · 可追溯 · 可复现</text>
+  </g>
+  <g id="equation" data-pptx-bounds="64 580 1152 64">
+    <text x="64" y="620" font-size="30" font-weight="bold" fill="#D97706">综述 = 任务图 × 证据链 × 验证</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">核心判断 · 工作流而非单次生成</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P03 / 17</text>
+  </g>
+</svg>
+
+
+

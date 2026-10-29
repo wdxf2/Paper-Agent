@@ -1,0 +1,14 @@
+No,Filename,Width,Height,AspectRatio,PixelAspectRatio,SourceDisplayRatio,RatioSource,Format,HasTransparentPixels,UsageCount,DisplayRatioVariants,AssetKind,SvgRenderable,PptxNativeSupported,SizeKB,Category
+1,activity_rag.png,2233,2721,0.82,0.82,,native,PNG,False,1,,bitmap,True,True,119.9,Near square
+2,class_model.png,1010,2963,0.34,0.34,,native,PNG,False,1,,bitmap,True,True,141.9,Portrait
+3,component.png,2656,2410,1.10,1.10,,native,PNG,False,1,,bitmap,True,True,161.9,Near square
+4,domain_model.png,1686,1301,1.30,1.30,,native,PNG,False,1,,bitmap,True,True,93.2,Standard landscape
+5,evidence_model.png,1612,602,2.68,2.68,,native,PNG,False,1,,bitmap,True,True,57.7,Ultra-wide
+6,image_001.png,1393,1607,0.87,0.87,0.87,native,PNG,False,1,,bitmap,True,True,99.0,Near square
+7,image_002.png,2656,2410,1.10,1.10,1.10,native,PNG,False,1,,bitmap,True,True,161.9,Near square
+8,image_003.png,2233,2721,0.82,0.82,0.82,native,PNG,False,1,,bitmap,True,True,119.9,Near square
+9,image_004.png,1686,1301,1.30,1.30,1.30,native,PNG,False,1,,bitmap,True,True,93.2,Standard landscape
+10,image_005.png,1612,602,2.68,2.68,2.68,native,PNG,False,1,,bitmap,True,True,57.7,Ultra-wide
+11,image_006.png,2062,2308,0.89,0.89,0.89,native,PNG,False,1,,bitmap,True,True,125.5,Near square
+12,sequence.png,2062,2308,0.89,0.89,,native,PNG,False,1,,bitmap,True,True,125.5,Near square
+13,use_case.png,1393,1607,0.87,0.87,,native,PNG,False,1,,bitmap,True,True,99.0,Near square

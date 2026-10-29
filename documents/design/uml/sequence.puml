@@ -1,0 +1,44 @@
+@startuml
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+skinparam ParticipantPadding 8
+skinparam BoxPadding 6
+
+actor "研究者" as User
+participant "Web UI" as UI
+participant "API / 编排器" as OR
+participant "检索 / RAG" as RET
+participant "分析与对比" as ANA
+participant "撰写智能体" as WRI
+participant "引用校验" as VER
+database "证据库" as DB
+
+User -> UI : 输入主题、时间范围、来源
+UI -> OR : POST /api/v1/reviews
+OR -> OR : 任务分解并生成 DAG
+loop 每个检索子任务
+  OR -> RET : SearchTask
+  RET -> DB : 混合检索与重排序
+  DB --> RET : 证据片段及定位信息
+  RET --> OR : RetrievalArtifact
+end
+OR -> ANA : 分析论文并识别方法演进
+ANA --> OR : AnalysisArtifact + ComparisonArtifact
+OR -> WRI : 依据大纲和证据生成初稿
+WRI --> OR : DraftArtifact
+OR -> VER : 校验声明与引用
+alt 存在支持度不足的声明
+  VER --> OR : unsupportedClaims
+  OR -> WRI : 定向改写或补充检索
+  WRI --> OR : revisedDraft
+else 全部可追溯
+  VER --> OR : verificationPassed
+end
+OR -> DB : 保存报告、引用图与版本
+OR --> UI : SSE 完成事件
+UI --> User : 展示报告与证据面板
+@enduml

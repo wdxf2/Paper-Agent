@@ -1,0 +1,479 @@
+{
+  "schema": "ppt-master.pptx-postflight-report.v1",
+  "status": "passed-with-warnings",
+  "output": {
+    "path": "E:\\learning\\courses\\Paper-Agent\\projects\\paper_agent_opening_20261027\\exports\\paper_agent_opening_20261028_165218.pptx",
+    "bytes": 114328
+  },
+  "source": {
+    "svg_slide_count": 17,
+    "layout_definition_count": 0,
+    "fingerprint": {
+      "algorithm": "sha256",
+      "digest": "0faee90db5c2efe166ee2c43705cbc12468982ea2b8852d73aaca15af09311f1",
+      "file_count": 17,
+      "files": [
+        {
+          "file": "01_cover.svg",
+          "sha256": "8a66a027d15804c9dc37f595443f9aebe40c4b7c1d39758c8ea3d38a0e50e436"
+        },
+        {
+          "file": "02_background.svg",
+          "sha256": "061a63e26df37725cc726f479cd47e857ae818808370c10857989ef2bdf4eabf"
+        },
+        {
+          "file": "03_core_idea.svg",
+          "sha256": "d08df71ce9558a62de38b10a8b705862452228f887b16e21e0115739517863e6"
+        },
+        {
+          "file": "04_gap.svg",
+          "sha256": "33b135e91e327981b0d17dc7275e9e682f9635211521c40c8094158b56c65287"
+        },
+        {
+          "file": "05_solution.svg",
+          "sha256": "3eb95dc0c67a85e1facd0acc5e553fb53cc888df6a381472402d5d848d53e6d2"
+        },
+        {
+          "file": "06_agents.svg",
+          "sha256": "5220e1385652f0af2e4ec6f3ad29895d744d7304ccbd4b1e8526c5292743e006"
+        },
+        {
+          "file": "07_rag.svg",
+          "sha256": "6c4fb96392850bef1d65c5f312ffce0bec0355029c74f1b90c249a1a90d646e0"
+        },
+        {
+          "file": "08_fusion.svg",
+          "sha256": "575e4ef372d41043be2452c38cb6e5c3117ee80835c8374cb640f69a138495b3"
+        },
+        {
+          "file": "09_system.svg",
+          "sha256": "fab8629fce54b1c0c20bdb1909bb6e9770e73d08d8a80d3acb00e529fd8697cb"
+        },
+        {
+          "file": "10_requirements.svg",
+          "sha256": "68f0ce6e68f7028a0fb3e12c2a6eb63f0c59a21f22bdaf7e7c563efb0cdf3811"
+        },
+        {
+          "file": "11_evaluation.svg",
+          "sha256": "99cf610c531e758bed467b8ea0a74b514de300665b83f3afef6f23c8026ddca9"
+        },
+        {
+          "file": "12_roadmap.svg",
+          "sha256": "064fed3a7e3ec0365620fdb373b7d5f6a6618d0f3706edd03625bc6f5424e3b5"
+        },
+        {
+          "file": "13_outcomes.svg",
+          "sha256": "658d7b199fca9b52b3b444298a4ada937387835cd9c81de08bf3f6c505e496b2"
+        },
+        {
+          "file": "14_conclusion.svg",
+          "sha256": "d504e52f796c769336da6e833cd953b2211ec289900a8f59774afec08d2d038f"
+        },
+        {
+          "file": "15_uml_use_case.svg",
+          "sha256": "a62384193663015807cf8b43c94e34db59a930039bbd603b2d1c2656050c5903"
+        },
+        {
+          "file": "16_uml_class.svg",
+          "sha256": "c62b5dbb89ce824a15e7941da3aa0bac8469e29d374e943057dc01247b0e6be8"
+        },
+        {
+          "file": "17_uml_sequence.svg",
+          "sha256": "b5654a37b76d50cec1c32620cddf26eff13bc78493eb14b64ff9f2a7ed7516b8"
+        }
+      ]
+    },
+    "authoring_roundtrip": null
+  },
+  "package": {
+    "zip_integrity": "passed",
+    "corrupt_member": null,
+    "slides": 17,
+    "notes": 17,
+    "masters": 1,
+    "layouts": 1
+  },
+  "checks": {
+    "zip_integrity": "passed",
+    "slide_count": "passed",
+    "internal_relationships": "enforced-at-build",
+    "structured_package": "not-applicable",
+    "transitions": "enforced-at-build",
+    "animations": "enforced-at-build",
+    "project_svg_contract": "enforced-at-build",
+    "compatibility_normalization": "not-applicable",
+    "authoring_roundtrip": "not-applicable",
+    "quality_gate": "passed",
+    "quality_warnings": "warning",
+    "template_tokens": "passed",
+    "external_images": "passed",
+    "font_portability": "passed"
+  },
+  "quality": {
+    "status": "loaded",
+    "path": "E:\\learning\\courses\\Paper-Agent\\projects\\paper_agent_opening_20261027\\validation\\svg_quality_report.json",
+    "schema": "ppt-master.svg-quality-report.v1",
+    "stage": "final",
+    "source_match": "passed",
+    "source_fingerprint": {
+      "algorithm": "sha256",
+      "digest": "0faee90db5c2efe166ee2c43705cbc12468982ea2b8852d73aaca15af09311f1",
+      "file_count": 17,
+      "files": [
+        {
+          "file": "01_cover.svg",
+          "sha256": "8a66a027d15804c9dc37f595443f9aebe40c4b7c1d39758c8ea3d38a0e50e436"
+        },
+        {
+          "file": "02_background.svg",
+          "sha256": "061a63e26df37725cc726f479cd47e857ae818808370c10857989ef2bdf4eabf"
+        },
+        {
+          "file": "03_core_idea.svg",
+          "sha256": "d08df71ce9558a62de38b10a8b705862452228f887b16e21e0115739517863e6"
+        },
+        {
+          "file": "04_gap.svg",
+          "sha256": "33b135e91e327981b0d17dc7275e9e682f9635211521c40c8094158b56c65287"
+        },
+        {
+          "file": "05_solution.svg",
+          "sha256": "3eb95dc0c67a85e1facd0acc5e553fb53cc888df6a381472402d5d848d53e6d2"
+        },
+        {
+          "file": "06_agents.svg",
+          "sha256": "5220e1385652f0af2e4ec6f3ad29895d744d7304ccbd4b1e8526c5292743e006"
+        },
+        {
+          "file": "07_rag.svg",
+          "sha256": "6c4fb96392850bef1d65c5f312ffce0bec0355029c74f1b90c249a1a90d646e0"
+        },
+        {
+          "file": "08_fusion.svg",
+          "sha256": "575e4ef372d41043be2452c38cb6e5c3117ee80835c8374cb640f69a138495b3"
+        },
+        {
+          "file": "09_system.svg",
+          "sha256": "fab8629fce54b1c0c20bdb1909bb6e9770e73d08d8a80d3acb00e529fd8697cb"
+        },
+        {
+          "file": "10_requirements.svg",
+          "sha256": "68f0ce6e68f7028a0fb3e12c2a6eb63f0c59a21f22bdaf7e7c563efb0cdf3811"
+        },
+        {
+          "file": "11_evaluation.svg",
+          "sha256": "99cf610c531e758bed467b8ea0a74b514de300665b83f3afef6f23c8026ddca9"
+        },
+        {
+          "file": "12_roadmap.svg",
+          "sha256": "064fed3a7e3ec0365620fdb373b7d5f6a6618d0f3706edd03625bc6f5424e3b5"
+        },
+        {
+          "file": "13_outcomes.svg",
+          "sha256": "658d7b199fca9b52b3b444298a4ada937387835cd9c81de08bf3f6c505e496b2"
+        },
+        {
+          "file": "14_conclusion.svg",
+          "sha256": "d504e52f796c769336da6e833cd953b2211ec289900a8f59774afec08d2d038f"
+        },
+        {
+          "file": "15_uml_use_case.svg",
+          "sha256": "a62384193663015807cf8b43c94e34db59a930039bbd603b2d1c2656050c5903"
+        },
+        {
+          "file": "16_uml_class.svg",
+          "sha256": "c62b5dbb89ce824a15e7941da3aa0bac8469e29d374e943057dc01247b0e6be8"
+        },
+        {
+          "file": "17_uml_sequence.svg",
+          "sha256": "b5654a37b76d50cec1c32620cddf26eff13bc78493eb14b64ff9f2a7ed7516b8"
+        }
+      ]
+    },
+    "summary": {
+      "total": 17,
+      "passed": 0,
+      "warnings": 17,
+      "errors": 0
+    },
+    "categories": {
+      "blocking": {
+        "count": 0,
+        "issues": []
+      },
+      "introduced": {
+        "count": 52,
+        "issues": [
+          {
+            "file": "01_cover.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "01_cover.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (7 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): text[21]:fill '#1F2933' -> None; footer:fill None -> '#5B6770'; footer:font-size None -> '14' (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "01_cover.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"cover-title\"> x=64.0, y=160.0..212.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "02_background.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "02_background.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (15 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "02_background.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "03_core_idea.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "03_core_idea.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[10]:font-weight 'bold' -> None; text[11]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "03_core_idea.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "04_gap.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "04_gap.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "04_gap.svg",
+            "message": "Detected 7 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"line-rag\"> x=96.0, y=384.0..410.0, 2 lines; <g id=\"line-rag\"> x=96.0, y=484.0..510.0, 2 lines; +4 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "05_solution.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "05_solution.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[10]:font-weight 'bold' -> None; text[11]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "05_solution.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "06_agents.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "06_agents.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[10]:font-weight 'bold' -> None; text[11]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "06_agents.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "07_rag.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "07_rag.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (12 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[10]:font-weight 'bold' -> None; text[11]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "07_rag.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "08_fusion.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "08_fusion.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[8]:font-weight 'bold' -> None; text[9]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "08_fusion.svg",
+            "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"fusion-flow\"> x=96.0, y=442.0..468.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "09_system.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "09_system.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "09_system.svg",
+            "message": "<text> (x=756, y=406; text='状态') exceeds <g id=\"system-layers\"> data-pptx-bounds on the horizontal axis: content (756.0, 394.1)-(785.7, 410.9), container (64.0, 176.0)-(784.0, 616.0), overflow horizontal 0.2%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.8 px per CJK char at 14px incl. headroom; ≈48 chars fit in 720 px"
+          },
+          {
+            "file": "09_system.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "10_requirements.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "10_requirements.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (25 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "10_requirements.svg",
+            "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"nonfunctional-requirements\"> x=828.0, y=508.0..534.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "11_evaluation.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "11_evaluation.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "11_evaluation.svg",
+            "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"baselines-metrics\"> x=736.0, y=500.0..522.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "12_roadmap.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "12_roadmap.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[8]:font-weight 'bold' -> None; text[9]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "12_roadmap.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "13_outcomes.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "13_outcomes.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "13_outcomes.svg",
+            "message": "Detected 5 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"outcome-system\"> x=88.0, y=302.0..332.0, 2 lines; <g id=\"outcome-eval\"> x=648.0, y=302.0..332.0, 2 lines; +2 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "14_conclusion.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "14_conclusion.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "14_conclusion.svg",
+            "message": "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines; <g id=\"conclusion-statement\"> x=152.0, y=300.0..342.0, 2 lines; <g id=\"conclusion-statement\"> x=152.0, y=420.0..446.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "15_uml_use_case.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "15_uml_use_case.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (15 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[8]:font-weight 'bold' -> None; text[9]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "15_uml_use_case.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "16_uml_class.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "16_uml_class.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[5]:font-weight 'bold' -> None; text[6]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "16_uml_class.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "17_uml_sequence.svg",
+            "message": "Noncanonical compact authoring: Root SVG cannot declare shared paint values: fill; put color and line defaults on meaningful groups (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "17_uml_sequence.svg",
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (10 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): page-title:font-weight None -> 'bold'; text[10]:font-weight 'bold' -> None; text[11]:font-weight 'bold' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          },
+          {
+            "file": "17_uml_sequence.svg",
+            "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"page-title\"> x=64.0, y=104.0..150.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          }
+        ]
+      },
+      "inherited": {
+        "count": 0,
+        "issues": []
+      },
+      "source-import": {
+        "count": 0,
+        "summary": {
+          "warning_count": 0,
+          "by_code": {}
+        }
+      }
+    }
+  },
+  "resources": {
+    "unresolved_template_tokens": [],
+    "fonts": {
+      "stacks": [
+        "Microsoft YaHei, Arial, sans-serif"
+      ],
+      "generic_only_stacks": [],
+      "unsafe_exported_faces": []
+    },
+    "images": {
+      "data_uri": 0,
+      "local": 0,
+      "external": 0,
+      "external_references": []
+    }
+  },
+  "export_policy": {
+    "project_svg_contract": "strict",
+    "dangerous_normalization_count": 0
+  },
+  "deck_motion": {
+    "transition": {
+      "effect": "fade",
+      "effect_options": {},
+      "duration": 0.4,
+      "auto_advance": null,
+      "sound": null
+    },
+    "animation": {
+      "effect": "none",
+      "effect_request": null,
+      "duration": 0.4,
+      "stagger": 0.5,
+      "trigger": "after-previous"
+    },
+    "cli_overrides": {
+      "transition": false,
+      "transition_duration": false,
+      "auto_advance": false,
+      "transition_sound": false,
+      "animation": false,
+      "animation_duration": false,
+      "animation_stagger": false,
+      "animation_trigger": false
+    },
+    "narration_timings": false
+  },
+  "backup_path": "E:\\learning\\courses\\Paper-Agent\\projects\\paper_agent_opening_20261027\\backup\\20261028_165218\\svg_output",
+  "conversion_trace_path": null
+}

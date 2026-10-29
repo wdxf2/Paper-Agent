@@ -1,0 +1,58 @@
+@startuml
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam nodesep 45
+skinparam ranksep 55
+skinparam class {
+  BackgroundColor #F7FAF7
+  BorderColor #335C40
+  ArrowColor #335C40
+}
+hide methods
+
+class "综述项目\nReviewProject" as Project {
+  projectId : UUID
+  topic : String
+  status : ProjectStatus
+  createdAt : DateTime
+}
+class "检索计划\nSearchPlan" as Plan {
+  planId : UUID
+  subqueries : List<String>
+  timeRange : DateRange
+  inclusion : List<String>
+  exclusion : List<String>
+}
+class "论文\nPaper" as Paper {
+  paperId : UUID
+  title : String
+  doi : String
+  year : Integer
+  source : SourceType
+}
+class "综述草稿\nReviewDraft" as Draft {
+  draftId : UUID
+  version : Integer
+  status : DraftStatus
+}
+class "任务运行\nTaskRun" as Task {
+  taskId : UUID
+  type : TaskType
+  status : TaskStatus
+  attempts : Integer
+}
+class "评测报告\nEvaluationReport" as Eval {
+  reportId : UUID
+  overallScore : Float
+  citationPrecision : Float
+}
+
+Project "1" *-- "1" Plan : 制定
+Plan "1" -- "0..*" Paper : 召回
+Project "1" *-- "0..*" Draft : 生成
+Project "1" *-- "0..*" Task : 调度
+Project "1" -- "0..1" Eval : 评测
+@enduml

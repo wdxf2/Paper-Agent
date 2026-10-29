@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+    <marker id="arrow-accent" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#D97706"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">07 / 可追溯 RAG</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">每条关键声明都绑定 evidenceId，</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">形成可追溯引用链</text>
+  </g>
+  <g id="rag-pipeline" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">EVIDENCE PIPELINE / SOURCE → CLAIM</text>
+    <g id="pipeline-stage-1">
+      <rect x="96" y="232" width="250" height="86" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/database -->
+  <g transform="translate(116, 250) scale(1.41667)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M4 6a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+    <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+    <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+  </g>
+      <text x="164" y="270" font-size="18" font-weight="bold" fill="#0E3B43">论文接入</text>
+      <text x="164" y="296" font-size="14" fill="#5B6770">metadata + 开放全文</text>
+    </g>
+    <line x1="346" y1="275" x2="374" y2="275" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <g id="pipeline-stage-2">
+      <rect x="378" y="232" width="250" height="86" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/binary-tree -->
+  <g transform="translate(398, 250) scale(1.41667)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M11 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M21 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" />
+    <path d="M5.058 18.306l2.88 -4.606" />
+    <path d="M10.061 10.303l2.877 -4.604" />
+    <path d="M10.065 13.705l2.876 4.6" />
+    <path d="M15.063 5.7l2.881 4.61" />
+  </g>
+      <text x="446" y="270" font-size="18" font-weight="bold" fill="#0E3B43">章节切分</text>
+      <text x="446" y="296" font-size="14" fill="#5B6770">chunk + section + locator</text>
+    </g>
+    <line x1="628" y1="275" x2="656" y2="275" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <g id="pipeline-stage-3">
+      <rect x="660" y="232" width="250" height="86" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/search -->
+  <g transform="translate(680, 250) scale(1.41667)" fill="none" stroke="#0E3B43" stroke-width="2">
+    <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+    <path d="M21 21l-6 -6" />
+  </g>
+      <text x="728" y="270" font-size="18" font-weight="bold" fill="#0E3B43">混合召回</text>
+      <text x="728" y="296" font-size="14" fill="#5B6770">BM25 + dense + rerank</text>
+    </g>
+    <line x1="910" y1="275" x2="938" y2="275" stroke="#0E3B43" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <g id="pipeline-stage-4">
+      <rect x="942" y="232" width="242" height="86" rx="8" fill="#FFF3E3" stroke="#D97706" stroke-width="1.5"/>
+      <!-- icon: tabler-outline/link -->
+  <g transform="translate(962, 250) scale(1.41667)" fill="none" stroke="#D97706" stroke-width="2">
+    <path d="M9 15l6 -6" />
+    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+    <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+  </g>
+      <text x="1010" y="270" font-size="18" font-weight="bold" fill="#8B4A16">证据卡片</text>
+      <text x="1010" y="296" font-size="14" fill="#8B4A16">evidenceId + support</text>
+    </g>
+    <g id="evidence-example">
+      <rect x="96" y="350" width="510" height="202" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <rect x="96" y="350" width="10" height="202" fill="#D97706"/>
+      <text x="128" y="384" font-size="18" font-weight="bold" fill="#2F6F7E">EVIDENCE / EV-017</text>
+      <text x="128" y="420" font-size="18" fill="#1F2933">“在数据集 D 上，方法 A 的</text>
+      <text x="128" y="446" font-size="18" fill="#1F2933">F1 优于方法 B。”</text>
+      <text x="128" y="486" font-size="14" fill="#5B6770">Paper: 2402.01788 · Section 4.2</text>
+      <text x="128" y="510" font-size="14" fill="#5B6770">Locator: p.6 / Table 2 / row A</text>
+      <text x="128" y="538" font-size="14" fill="#8B4A16">Support: 0.82 · 自动通过</text>
+    </g>
+    <path d="M606 450H648" fill="none" stroke="#D97706" stroke-width="1.8" stroke-dasharray="6,4" marker-end="url(#arrow-accent)"/>
+    <g id="claim-example">
+      <rect x="660" y="350" width="524" height="202" rx="8" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+      <text x="690" y="384" font-size="18" font-weight="bold" fill="#2F6F7E">CLAIM / CL-041</text>
+      <text x="690" y="420" font-size="24" font-weight="bold" fill="#0E3B43">方法 A 在 D 上优于 B</text>
+      <text x="690" y="452" font-size="18" fill="#5B6770">→ evidenceIds: EV-017, EV-021</text>
+      <text x="690" y="482" font-size="18" fill="#5B6770">→ citation: [12] [14]</text>
+      <rect x="690" y="508" width="454" height="26" fill="#E8EFEA"/>
+      <text x="708" y="526" font-size="14" fill="#0E3B43">正文只允许引用证据卡片中存在的 ID</text>
+    </g>
+    <text x="96" y="590" font-size="18" font-weight="bold" fill="#0E3B43">校验门槛：≥0.75 自动通过 · 0.50—0.75 人工复核 · &lt;0.50 拒绝写入</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">可追溯 RAG · 从原文到声明的证据路径</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P07 / 17</text>
+  </g>
+</svg>
+

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">11 / 三领域评测</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">三领域、四基线、两层评测：</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">质量必须可核验</text>
+  </g>
+  <g id="domains" data-pptx-bounds="64 176 620 440">
+    <rect x="64" y="176" width="620" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">TEST DOMAINS / 3 × 3 TOPICS</text>
+    <g id="domain-rag">
+      <rect x="96" y="232" width="556" height="96" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.2"/>
+      <use data-icon="tabler-outline/database" x="116" y="252" width="34" height="34" fill="#0E3B43" stroke-width="2"/>
+      <text x="168" y="266" font-size="24" font-weight="bold" fill="#0E3B43">检索增强生成</text>
+      <text x="168" y="294" font-size="18" fill="#5B6770">忠实性评估 · 混合检索 · 证据绑定</text>
+      <text x="168" y="318" font-size="14" fill="#5B6770">主题示例：RAG 的引用可靠性与检索策略</text>
+    </g>
+    <g id="domain-agent">
+      <rect x="96" y="346" width="556" height="96" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.2"/>
+      <use data-icon="tabler-outline/network" x="116" y="366" width="34" height="34" fill="#0E3B43" stroke-width="2"/>
+      <text x="168" y="380" font-size="24" font-weight="bold" fill="#0E3B43">LLM 多智能体系统</text>
+      <text x="168" y="408" font-size="18" fill="#5B6770">任务分解 · 角色协作 · 错误恢复</text>
+      <text x="168" y="432" font-size="14" fill="#5B6770">主题示例：多智能体任务图与协作机制</text>
+    </g>
+    <g id="domain-security">
+      <rect x="96" y="460" width="556" height="96" rx="8" fill="#FFF3E3" stroke="#D97706" stroke-width="1.2"/>
+      <use data-icon="tabler-outline/shield-check" x="116" y="480" width="34" height="34" fill="#D97706" stroke-width="2"/>
+      <text x="168" y="494" font-size="24" font-weight="bold" fill="#0E3B43">软件漏洞检测</text>
+      <text x="168" y="522" font-size="18" fill="#8B4A16">实验条件 · 数据集偏差 · 局限识别</text>
+      <text x="168" y="546" font-size="14" fill="#8B4A16">主题示例：深度学习的漏洞检测与泛化</text>
+    </g>
+  </g>
+  <g id="baselines-metrics" data-pptx-bounds="684 176 532 440">
+    <rect x="684" y="176" width="532" height="440" rx="12" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="716" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">BASELINES / 4 RUNS</text>
+    <g id="baseline-direct"><circle cx="728" cy="246" r="8" fill="#BED0C5"/><text x="752" y="252" font-size="18" fill="#1F2933">Direct LLM</text><text x="1050" y="252" font-size="14" fill="#5B6770">无检索</text></g>
+    <g id="baseline-single"><circle cx="728" cy="284" r="8" fill="#2F6F7E"/><text x="752" y="290" font-size="18" fill="#1F2933">Single-agent + RAG</text><text x="1050" y="290" font-size="14" fill="#5B6770">单智能体</text></g>
+    <g id="baseline-multi"><circle cx="728" cy="322" r="8" fill="#0E3B43"/><text x="752" y="328" font-size="18" fill="#1F2933">Multi-agent without RAG</text><text x="1050" y="328" font-size="14" fill="#5B6770">无证据</text></g>
+    <g id="baseline-ours"><circle cx="728" cy="360" r="8" fill="#D97706"/><text x="752" y="366" font-size="18" font-weight="bold" fill="#8B4A16">Ours</text><text x="1050" y="366" font-size="14" fill="#8B4A16">任务图 + RAG + 校验</text></g>
+    <path d="M716 390H1184" stroke="#BED0C5" stroke-width="1"/>
+    <text x="716" y="426" font-size="18" font-weight="bold" fill="#2F6F7E">AUTO + HUMAN / 两层评测</text>
+    <rect x="716" y="444" width="468" height="86" rx="8" fill="#E8EFEA"/>
+    <text x="736" y="474" font-size="18" font-weight="bold" fill="#0E3B43">自动指标</text>
+    <text x="736" y="500" font-size="14" fill="#5B6770">引用精度 / 召回 · 覆盖率 · 定位准确率</text>
+    <text x="736" y="522" font-size="14" fill="#5B6770">nDCG · 时延 · token 成本</text>
+    <rect x="716" y="544" width="468" height="50" rx="8" fill="#FFF3E3"/>
+    <text x="736" y="568" font-size="18" font-weight="bold" fill="#8B4A16">人工盲评</text>
+    <text x="846" y="568" font-size="14" fill="#8B4A16">3 名评分者 · 5 分制 · Krippendorff's α ≥ 0.70</text>
+    <text x="736" y="594" font-size="14" fill="#8B4A16">不只问“像不像”，还要问“有没有证据”。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">三领域评测 · RAG、LLM 多智能体、软件漏洞检测</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P11 / 14</text>
+  </g>
+</svg>

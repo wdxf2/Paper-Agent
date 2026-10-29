@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">16 / UML 类图</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">UML 类图：</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">证据、声明与引用的关系</text>
+  </g>
+  <g id="class-diagram" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">DOMAIN MODEL / MULTIPLICITY</text>
+    <g id="class-paper">
+      <rect x="96" y="238" width="200" height="148" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/>
+      <rect x="96" y="238" width="200" height="38" rx="6" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.4"/>
+      <text x="196" y="264" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">Paper</text>
+      <text x="114" y="304" font-size="14" fill="#5B6770">paperId: UUID</text>
+      <text x="114" y="326" font-size="14" fill="#5B6770">title: String</text>
+      <text x="114" y="348" font-size="14" fill="#5B6770">doi: String</text>
+      <text x="114" y="370" font-size="14" fill="#5B6770">year: Integer</text>
+    </g>
+    <g id="class-evidence">
+      <rect x="340" y="238" width="220" height="148" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/>
+      <rect x="340" y="238" width="220" height="38" rx="6" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.4"/>
+      <text x="450" y="264" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">Evidence</text>
+      <text x="358" y="304" font-size="14" fill="#5B6770">evidenceId: UUID</text>
+      <text x="358" y="326" font-size="14" fill="#5B6770">quote: String</text>
+      <text x="358" y="348" font-size="14" fill="#5B6770">locator: String</text>
+      <text x="358" y="370" font-size="14" fill="#5B6770">confidence: Float</text>
+    </g>
+    <g id="class-claim">
+      <rect x="620" y="238" width="220" height="148" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/>
+      <rect x="620" y="238" width="220" height="38" rx="6" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.4"/>
+      <text x="730" y="264" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">Claim</text>
+      <text x="638" y="304" font-size="14" fill="#5B6770">claimId: UUID</text>
+      <text x="638" y="326" font-size="14" fill="#5B6770">text: String</text>
+      <text x="638" y="348" font-size="14" fill="#5B6770">section: String</text>
+      <text x="638" y="370" font-size="14" fill="#5B6770">supportScore: Float</text>
+    </g>
+    <g id="class-citation">
+      <rect x="910" y="238" width="250" height="148" rx="6" fill="#FFF3E3" stroke="#D97706" stroke-width="1.4"/>
+      <rect x="910" y="238" width="250" height="38" rx="6" fill="#FFF3E3" stroke="#D97706" stroke-width="1.4"/>
+      <text x="1035" y="264" text-anchor="middle" font-size="18" font-weight="bold" fill="#8B4A16">Citation</text>
+      <text x="928" y="304" font-size="14" fill="#8B4A16">citationId: UUID</text>
+      <text x="928" y="326" font-size="14" fill="#8B4A16">styleKey: String</text>
+      <text x="928" y="348" font-size="14" fill="#8B4A16">locator: String</text>
+      <text x="928" y="370" font-size="14" fill="#8B4A16">evidenceId: UUID</text>
+    </g>
+    <line x1="296" y1="312" x2="340" y2="312" stroke="#0E3B43" stroke-width="1.4"/>
+    <text x="306" y="300" font-size="14" fill="#2F6F7E">1 *-- 1..*</text>
+    <line x1="560" y1="312" x2="620" y2="312" stroke="#0E3B43" stroke-width="1.4"/>
+    <text x="562" y="300" font-size="14" fill="#2F6F7E">0..* -- 0..*</text>
+    <line x1="840" y1="312" x2="910" y2="312" stroke="#0E3B43" stroke-width="1.4"/>
+    <text x="844" y="300" font-size="14" fill="#2F6F7E">1 -- 1..*</text>
+    <g id="class-project">
+      <rect x="96" y="442" width="220" height="116" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/>
+      <rect x="96" y="442" width="220" height="38" rx="6" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.4"/>
+      <text x="206" y="468" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">ReviewProject</text>
+      <text x="114" y="508" font-size="14" fill="#5B6770">projectId: UUID</text>
+      <text x="114" y="530" font-size="14" fill="#5B6770">topic: String</text>
+      <text x="114" y="552" font-size="14" fill="#5B6770">status: ProjectStatus</text>
+    </g>
+    <g id="class-draft">
+      <rect x="410" y="442" width="240" height="116" rx="6" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.4"/>
+      <rect x="410" y="442" width="240" height="38" rx="6" fill="#E8EFEA" stroke="#0E3B43" stroke-width="1.4"/>
+      <text x="530" y="468" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E3B43">ReviewDraft</text>
+      <text x="428" y="508" font-size="14" fill="#5B6770">draftId: UUID</text>
+      <text x="428" y="530" font-size="14" fill="#5B6770">version: Integer</text>
+      <text x="428" y="552" font-size="14" fill="#5B6770">status: DraftStatus</text>
+    </g>
+    <line x1="316" y1="500" x2="410" y2="500" stroke="#0E3B43" stroke-width="1.4"/>
+    <text x="316" y="488" font-size="14" fill="#2F6F7E">1 *-- 0..*</text>
+    <path d="M530 442V410H730V386" fill="none" stroke="#0E3B43" stroke-width="1.4"/>
+    <text x="534" y="408" font-size="14" fill="#2F6F7E">1 *-- 1..*</text>
+    <path d="M1035 386V410H530V386" fill="none" stroke="#D97706" stroke-width="1.4"/>
+    <text x="850" y="430" font-size="14" fill="#8B4A16">Citation → Evidence</text>
+    <text x="96" y="594" font-size="18" font-weight="bold" fill="#0E3B43">类图把可追溯性落实到对象、字段与多重性。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">UML 类图附录 · Evidence–Claim–Citation</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P16 / 17</text>
+  </g>
+</svg>
+

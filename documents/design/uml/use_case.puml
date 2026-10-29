@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam roundCorner 8
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+skinparam rectangle {
+  BackgroundColor #F8FBF8
+  BorderColor #4E7A58
+  BorderThickness 1.2
+}
+skinparam usecase {
+  BackgroundColor #E8F2EA
+  BorderColor #4E7A58
+  FontColor #1F3B2A
+}
+
+actor "研究者" as Researcher
+actor "系统管理员" as Admin
+actor "学术数据库\n（外部系统）" as Source <<system>>
+
+rectangle "科研文献智能综述生成系统" {
+  usecase "UC-01\n提交研究主题与约束" as UC01
+  usecase "UC-02\n生成结构化文献综述" as UC02
+  usecase "UC-03\n查看证据与引用" as UC03
+  usecase "UC-04\n编辑并导出报告" as UC04
+  usecase "UC-05\n配置数据源与模型" as UC05
+  usecase "UC-06\n监控任务与失败重试" as UC06
+  usecase "UC-07\n检索并规范化文献" as UC07
+  usecase "UC-08\n校验声明与引用" as UC08
+}
+
+Researcher -- UC01
+Researcher -- UC02
+Researcher -- UC03
+Researcher -- UC04
+Admin -- UC05
+Admin -- UC06
+UC02 ..> UC07 : <<include>>
+UC02 ..> UC08 : <<include>>
+Source -- UC07
+@enduml

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="ending" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">14 / 结论</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">让每一次综述结论，</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">都能回到原文证据</text>
+  </g>
+  <g id="conclusion-statement" data-pptx-bounds="64 220 700 300">
+    <rect x="64" y="220" width="700" height="300" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="282" font-size="64" font-weight="bold" fill="#D97706">“</text>
+    <text x="152" y="300" font-size="30" font-weight="bold" fill="#0E3B43">可信科研辅助，不是替代研究者，</text>
+    <text x="152" y="342" font-size="30" font-weight="bold" fill="#0E3B43">而是把证据链变成可检查的工作流。</text>
+    <path d="M152 380H704" stroke="#BED0C5" stroke-width="1"/>
+    <text x="152" y="420" font-size="18" fill="#5B6770">从任务分解、混合检索、结构化融合，</text>
+    <text x="152" y="446" font-size="18" fill="#5B6770">到 claim–evidence–locator 的引用校验。</text>
+    <rect x="152" y="472" width="500" height="24" fill="#0E3B43"/>
+    <text x="402" y="489" text-anchor="middle" font-size="14" fill="#F7F9F6">可交互 · 可追溯 · 可复现</text>
+  </g>
+  <g id="pillars" data-pptx-bounds="800 220 416 300">
+    <rect x="800" y="220" width="416" height="300" rx="12" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="832" y="256" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">THREE TAKEAWAYS</text>
+    <g id="pillar-1">
+      <text x="832" y="302" font-size="24" font-weight="bold" fill="#D97706">01</text>
+      <text x="882" y="302" font-size="24" font-weight="bold" fill="#0E3B43">任务图管理复杂度</text>
+      <text x="882" y="328" font-size="18" fill="#5B6770">用契约与检查点控制多智能体</text>
+    </g>
+    <g id="pillar-2">
+      <text x="832" y="380" font-size="24" font-weight="bold" fill="#D97706">02</text>
+      <text x="882" y="380" font-size="24" font-weight="bold" fill="#0E3B43">混合 RAG 管理证据</text>
+      <text x="882" y="406" font-size="18" fill="#5B6770">每条结论有 evidenceId 与定位</text>
+    </g>
+    <g id="pillar-3">
+      <text x="832" y="458" font-size="24" font-weight="bold" fill="#D97706">03</text>
+      <text x="882" y="458" font-size="24" font-weight="bold" fill="#0E3B43">三领域验证可行性</text>
+      <text x="882" y="484" font-size="18" fill="#5B6770">引用、覆盖、时延和成本一起测</text>
+    </g>
+  </g>
+  <g id="ask" data-pptx-bounds="64 560 1152 70">
+    <rect x="64" y="560" width="1152" height="70" rx="8" fill="#FFF3E3"/>
+    <text x="88" y="590" font-size="24" font-weight="bold" fill="#8B4A16">请评审指正研究边界、评测设计与实施风险。</text>
+    <text x="88" y="616" font-size="14" fill="#8B4A16">下一步：完成需求冻结 → 搭建 RAG 基线 → 迭代多智能体任务图。</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">结论 · 让结论回到证据</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P14 / 17</text>
+  </g>
+</svg>
+
+

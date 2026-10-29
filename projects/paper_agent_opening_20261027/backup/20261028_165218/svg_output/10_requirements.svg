@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">10 / 需求与验收</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">需求收敛为 12 项功能、</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">8 项非功能指标</text>
+  </g>
+  <g id="functional-requirements" data-pptx-bounds="64 176 700 440">
+    <rect x="64" y="176" width="700" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">FUNCTIONAL / 12 ITEMS</text>
+    <text x="96" y="248" font-size="24" font-weight="bold" fill="#0E3B43">P0：主流程必须先成立</text>
+    <g id="fr-1"><rect x="96" y="268" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="186" y="302" text-anchor="middle" font-size="18" fill="#1F2933">主题输入</text></g>
+    <g id="fr-2"><rect x="306" y="268" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="396" y="302" text-anchor="middle" font-size="18" fill="#1F2933">检索接入</text></g>
+    <g id="fr-3"><rect x="516" y="268" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="606" y="302" text-anchor="middle" font-size="18" fill="#1F2933">去重筛选</text></g>
+    <g id="fr-4"><rect x="96" y="344" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="186" y="378" text-anchor="middle" font-size="18" fill="#1F2933">章节切分</text></g>
+    <g id="fr-5"><rect x="306" y="344" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="396" y="378" text-anchor="middle" font-size="18" fill="#1F2933">混合检索</text></g>
+    <g id="fr-6"><rect x="516" y="344" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="606" y="378" text-anchor="middle" font-size="18" fill="#1F2933">内容分析</text></g>
+    <g id="fr-7"><rect x="96" y="420" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="186" y="454" text-anchor="middle" font-size="18" fill="#1F2933">对比融合</text></g>
+    <g id="fr-8"><rect x="306" y="420" width="180" height="58" rx="6" fill="#F7F9F6" stroke="#BED0C5"/><text x="396" y="454" text-anchor="middle" font-size="18" fill="#1F2933">结构化写作</text></g>
+    <g id="fr-9"><rect x="516" y="420" width="180" height="58" rx="6" fill="#FFF3E3" stroke="#D97706"/><text x="606" y="454" text-anchor="middle" font-size="18" font-weight="bold" fill="#8B4A16">引用校验</text></g>
+    <text x="96" y="512" font-size="18" font-weight="bold" fill="#2F6F7E">P1：增强体验</text>
+    <rect x="96" y="528" width="600" height="56" rx="6" fill="#F7F9F6" stroke="#BED0C5"/>
+    <text x="118" y="562" font-size="18" fill="#5B6770">证据查看 · 报告编辑 · 多格式导出 · 任务监控</text>
+  </g>
+  <g id="nonfunctional-requirements" data-pptx-bounds="796 176 420 440">
+    <rect x="796" y="176" width="420" height="440" rx="12" fill="#F7F9F6" stroke="#BED0C5" stroke-width="1.5"/>
+    <text x="828" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">NON-FUNCTIONAL / 8 ITEMS</text>
+    <g id="nfr-list">
+      <text x="828" y="252" font-size="18" fill="#1F2933">性能 · 可靠性 · 可追溯 · 可复现</text>
+      <text x="828" y="284" font-size="18" fill="#1F2933">安全 · 可维护 · 易用 · 成本</text>
+    </g>
+    <path d="M828 312H1184" stroke="#BED0C5" stroke-width="1"/>
+    <text x="828" y="348" font-size="18" font-weight="bold" fill="#2F6F7E">ACCEPTANCE / 关键目标</text>
+    <rect x="828" y="366" width="110" height="70" rx="8" fill="#E8EFEA"/>
+    <text x="883" y="400" text-anchor="middle" font-size="30" font-weight="bold" fill="#0E3B43">100%</text>
+    <text x="883" y="424" text-anchor="middle" font-size="14" fill="#5B6770">证据绑定</text>
+    <rect x="952" y="366" width="110" height="70" rx="8" fill="#FFF3E3"/>
+    <text x="1007" y="400" text-anchor="middle" font-size="30" font-weight="bold" fill="#8B4A16">≥85%</text>
+    <text x="1007" y="424" text-anchor="middle" font-size="14" fill="#8B4A16">引用精度</text>
+    <rect x="1076" y="366" width="108" height="70" rx="8" fill="#E8EFEA"/>
+    <text x="1130" y="400" text-anchor="middle" font-size="30" font-weight="bold" fill="#0E3B43">≥4.0</text>
+    <text x="1130" y="424" text-anchor="middle" font-size="14" fill="#5B6770">专家评分</text>
+    <text x="828" y="478" font-size="18" font-weight="bold" fill="#0E3B43">验收不是“看起来不错”</text>
+    <text x="828" y="508" font-size="18" fill="#5B6770">关键声明有证据、引用能定位、</text>
+    <text x="828" y="534" font-size="18" fill="#5B6770">失败可恢复、结果可复现。</text>
+    <rect x="828" y="564" width="356" height="24" rx="4" fill="#0E3B43"/>
+    <text x="1006" y="582" text-anchor="middle" font-size="14" fill="#F7F9F6">先保证证据链，再优化界面</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">需求与验收 · 12 项功能与 8 项非功能指标</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P10 / 17</text>
+  </g>
+</svg>
+

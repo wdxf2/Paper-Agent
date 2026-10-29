@@ -1,0 +1,75 @@
+@startuml
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam roundCorner 8
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F7FAF7
+  BorderColor #335C40
+}
+skinparam package {
+  BackgroundColor #FBFCFB
+  BorderColor #9AB3A0
+}
+
+package "表现层" {
+  [Web 前端\nReact + TypeScript] as UI
+}
+
+package "应用服务层" {
+  [REST API\nFastAPI] as API
+  [任务调度器\nCelery + Redis] as SCH
+  [综述编排器\nCrewAI] as ORCH
+  [LLM 网关] as LLMGW
+}
+
+package "智能体层" {
+  [协调智能体] as COORD
+  [检索智能体] as RET
+  [分析智能体] as ANA
+  [对比智能体] as CMP
+  [撰写智能体] as WRI
+  [引用校验智能体] as VER
+}
+
+package "RAG 与数据层" {
+  [混合检索\nBM25 + Dense] as HYB
+  [重排序器] as RER
+  [证据库] as EVID
+  [向量索引\npgvector] as VEC
+  [业务数据库\nPostgreSQL] as DB
+  [对象存储\nPDF / 报告] as OBJ
+}
+
+package "外部服务" {
+  [arXiv API] as ARX
+  [PubMed API] as PUB
+  [LLM 服务] as LLM
+}
+
+UI --> API : HTTPS / JSON
+API --> SCH : 创建任务
+SCH --> ORCH : 启动工作流
+ORCH --> COORD : 生成任务 DAG
+COORD --> RET
+COORD --> ANA
+COORD --> CMP
+COORD --> WRI
+COORD --> VER
+RET --> HYB
+HYB --> VEC
+HYB --> DB
+RET --> ARX
+RET --> PUB
+RET --> EVID
+EVID --> OBJ
+ANA --> LLMGW
+CMP --> LLMGW
+WRI --> LLMGW
+VER --> LLMGW
+LLMGW --> LLM
+ORCH --> EVID : 读取证据
+UI --> OBJ : 下载导出文件
+@enduml

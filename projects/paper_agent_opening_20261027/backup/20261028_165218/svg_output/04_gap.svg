@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">04 / 现状与缺口</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">三条研究线各有进展，</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">但都留下同一个缺口</text>
+  </g>
+  <g id="line-rag" data-pptx-bounds="64 176 368 390">
+    <rect x="64" y="176" width="368" height="390" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">LINE 01</text>
+    <use data-icon="tabler-outline/database" x="96" y="242" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <text x="96" y="322" font-size="30" font-weight="bold" fill="#0E3B43">RAG</text>
+    <text x="96" y="356" font-size="18" font-weight="bold" fill="#1F2933">能力</text>
+    <text x="96" y="384" font-size="18" fill="#5B6770">引入外部证据，降低</text>
+    <text x="96" y="410" font-size="18" fill="#5B6770">模型记忆依赖。</text>
+    <path d="M96 430H400" stroke="#BED0C5" stroke-width="1"/>
+    <text x="96" y="458" font-size="18" font-weight="bold" fill="#8B4A16">局限</text>
+    <text x="96" y="484" font-size="18" fill="#5B6770">引用常停留在段落/</text>
+    <text x="96" y="510" font-size="18" fill="#5B6770">文献级，难以证明具体声明。</text>
+    <text x="96" y="544" font-size="18" fill="#0E3B43">→ 需要细粒度证据定位</text>
+  </g>
+  <g id="line-agent" data-pptx-bounds="456 176 368 390">
+    <rect x="456" y="176" width="368" height="390" rx="12" fill="#E8EFEA"/>
+    <text x="488" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">LINE 02</text>
+    <use data-icon="tabler-outline/robot" x="488" y="242" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <text x="488" y="322" font-size="30" font-weight="bold" fill="#0E3B43">Multi-Agent</text>
+    <text x="488" y="356" font-size="18" font-weight="bold" fill="#1F2933">能力</text>
+    <text x="488" y="384" font-size="18" fill="#5B6770">角色分工、工具调用</text>
+    <text x="488" y="410" font-size="18" fill="#5B6770">与流程协作。</text>
+    <path d="M488 430H792" stroke="#BED0C5" stroke-width="1"/>
+    <text x="488" y="458" font-size="18" font-weight="bold" fill="#8B4A16">局限</text>
+    <text x="488" y="484" font-size="18" fill="#5B6770">自由对话易造成上下文膨胀、</text>
+    <text x="488" y="510" font-size="18" fill="#5B6770">职责漂移与错误级联。</text>
+    <text x="488" y="544" font-size="18" fill="#0E3B43">→ 需要任务契约与结构化产物</text>
+  </g>
+  <g id="line-survey" data-pptx-bounds="848 176 368 390">
+    <rect x="848" y="176" width="368" height="390" rx="12" fill="#E8EFEA"/>
+    <text x="880" y="214" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">LINE 03</text>
+    <use data-icon="tabler-outline/file-text" x="880" y="242" width="44" height="44" fill="#0E3B43" stroke-width="2"/>
+    <text x="880" y="322" font-size="30" font-weight="bold" fill="#0E3B43">Auto-Survey</text>
+    <text x="880" y="356" font-size="18" font-weight="bold" fill="#1F2933">能力</text>
+    <text x="880" y="384" font-size="18" fill="#5B6770">覆盖检索、组织、生成</text>
+    <text x="880" y="410" font-size="18" fill="#5B6770">与修订的端到端流程。</text>
+    <path d="M880 430H1184" stroke="#BED0C5" stroke-width="1"/>
+    <text x="880" y="458" font-size="18" font-weight="bold" fill="#8B4A16">局限</text>
+    <text x="880" y="484" font-size="18" fill="#5B6770">跨领域评测、冲突处理与</text>
+    <text x="880" y="510" font-size="18" fill="#5B6770">工程闭环仍不充分。</text>
+    <text x="880" y="544" font-size="18" fill="#0E3B43">→ 需要可复现的系统与评测</text>
+  </g>
+  <g id="takeaway" data-pptx-bounds="64 586 1152 58">
+    <rect x="64" y="586" width="1152" height="58" rx="8" fill="#FFF3E3"/>
+    <text x="88" y="623" font-size="24" font-weight="bold" fill="#8B4A16">本项目切口：claim–evidence–locator + 任务 DAG + 可复现 Web 原型</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">现状与缺口 · 三条研究线指向同一工程空白</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P04 / 17</text>
+  </g>
+</svg>
+

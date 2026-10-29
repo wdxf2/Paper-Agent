@@ -1,0 +1,36 @@
+@startuml
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 13
+skinparam shadowing false
+
+|#EAF3EC|采集与索引|
+start
+:接入 arXiv / PubMed 元数据与开放全文;
+:去重、筛选、规范化;
+:按章节切分并建立证据定位;
+:生成嵌入并写入 pgvector;
+
+|#F7F1DF|检索与生成|
+:主题改写与子查询规划;
+:BM25 与稠密向量混合召回;
+:重排序并控制证据多样性;
+:组装带 evidenceId 的上下文;
+:分析、对比并生成声明;
+
+|#E8EEF7|校验与发布|
+:声明-证据绑定;
+:引用关系与定位校验;
+while (校验未通过且未超过重试上限?) is (是)
+  :补充检索或定向改写;
+  :重新进行声明-证据校验;
+endwhile (否)
+if (校验通过?) then (是)
+  :生成带可追溯引用的报告;
+  :保存版本与引用图;
+  :提供 Markdown / DOCX / PDF 导出;
+else (否)
+  :标记为需人工复核并保留证据链;
+endif
+stop
+@enduml

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0E3B43"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 144H1216 M64 672H1216 M84 144V672 M1196 144V672" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="page-title" data-pptx-bounds="64 34 1152 136">
+    <text x="64" y="58" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">12 / 24 周进度</text>
+    <text x="64" y="104" font-size="46" font-weight="bold" fill="#0E3B43">24 周完成从 RAG</text>
+    <text x="64" y="150" font-size="46" font-weight="bold" fill="#0E3B43">到 Web 原型再到三领域评测</text>
+  </g>
+  <g id="roadmap" data-pptx-bounds="64 176 1152 440">
+    <rect x="64" y="176" width="1152" height="440" rx="12" fill="#E8EFEA"/>
+    <text x="96" y="210" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">DELIVERY PATH / CONTINUOUS INCREMENTS</text>
+    <line x1="96" y1="250" x2="1184" y2="250" stroke="#0E3B43" stroke-width="1.4" stroke-dasharray="6,5"/>
+    <g id="phase-1">
+      <rect x="64" y="276" width="260" height="260" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <text x="88" y="312" font-size="14" font-weight="bold" fill="#2F6F7E">PHASE 01 / WEEK 1—2</text>
+      <text x="88" y="352" font-size="24" font-weight="bold" fill="#0E3B43">调研与需求冻结</text>
+      <text x="88" y="390" font-size="18" fill="#5B6770">文献矩阵</text>
+      <text x="88" y="418" font-size="18" fill="#5B6770">用户与验收标准</text>
+      <text x="88" y="470" font-size="18" font-weight="bold" fill="#8B4A16">成果：需求规格 v1</text>
+    </g>
+    <g id="phase-2">
+      <rect x="360" y="276" width="260" height="260" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <text x="384" y="312" font-size="14" font-weight="bold" fill="#2F6F7E">PHASE 02 / WEEK 3—8</text>
+      <text x="384" y="352" font-size="24" font-weight="bold" fill="#0E3B43">架构与 RAG</text>
+      <text x="384" y="390" font-size="18" fill="#5B6770">数据接入 · 切分</text>
+      <text x="384" y="418" font-size="18" fill="#5B6770">混合检索 · 重排序</text>
+      <text x="384" y="470" font-size="18" font-weight="bold" fill="#8B4A16">成果：索引流水线</text>
+    </g>
+    <g id="phase-3">
+      <rect x="656" y="276" width="260" height="260" rx="8" fill="#F7F9F6" stroke="#0E3B43" stroke-width="1.5"/>
+      <text x="680" y="312" font-size="14" font-weight="bold" fill="#2F6F7E">PHASE 03 / WEEK 9—15</text>
+      <text x="680" y="352" font-size="24" font-weight="bold" fill="#0E3B43">智能体与 Web</text>
+      <text x="680" y="390" font-size="18" fill="#5B6770">任务 DAG · 产物 schema</text>
+      <text x="680" y="418" font-size="18" fill="#5B6770">引用校验 · 四视图</text>
+      <text x="680" y="470" font-size="18" font-weight="bold" fill="#8B4A16">成果：Alpha 版</text>
+    </g>
+    <g id="phase-4">
+      <rect x="952" y="276" width="260" height="260" rx="8" fill="#FFF3E3" stroke="#D97706" stroke-width="1.5"/>
+      <text x="976" y="312" font-size="14" font-weight="bold" fill="#8B4A16">PHASE 04 / WEEK 16—24</text>
+      <text x="976" y="352" font-size="24" font-weight="bold" fill="#0E3B43">评测与结项</text>
+      <text x="976" y="390" font-size="18" fill="#8B4A16">三领域盲评 · 消融</text>
+      <text x="976" y="418" font-size="18" fill="#8B4A16">稳定性 · 成本</text>
+      <text x="976" y="470" font-size="18" font-weight="bold" fill="#8B4A16">成果：报告与答辩</text>
+    </g>
+    <g id="milestones">
+      <text x="96" y="570" font-size="18" fill="#5B6770">里程碑：第 8 周可检索 → 第 15 周可演示 → 第 20 周可评测 → 第 24 周可结项</text>
+      <path d="M96 588H1184" stroke="#BED0C5" stroke-width="1"/>
+      <text x="96" y="612" font-size="14" fill="#5B6770">原则：每个阶段都产生可运行增量；优先保证证据链、任务恢复和可复现实验。</text>
+    </g>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">24 周进度 · 分阶段交付、尽早暴露风险</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P12 / 17</text>
+  </g>
+</svg>
+

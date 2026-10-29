@@ -1,0 +1,33 @@
+{
+  "schema": "ppt-master.source_to_md.profile.v1",
+  "converter": "doc_to_md.py",
+  "conversion_type": "docx",
+  "source": {
+    "path": "E:/learning/courses/Paper-Agent/documents/开题报告_完整版.docx",
+    "name": "开题报告_完整版.docx",
+    "suffix": ".docx",
+    "kind": "file",
+    "exists": true,
+    "size_bytes": 712724
+  },
+  "outputs": {
+    "markdown": "开题报告_完整版.md",
+    "asset_dir": "开题报告_完整版_files",
+    "image_manifest": "开题报告_完整版_files/image_manifest.json",
+    "image_count": 6
+  },
+  "markdown": {
+    "line_count": 595,
+    "char_count": 31315,
+    "heading_count": 0,
+    "table_count": 26,
+    "image_ref_count": 6,
+    "link_count": 0
+  },
+  "warnings": [
+    "Unrecognised paragraph style: Report Heading 1 (Style ID: ReportHeading1)",
+    "Unrecognised paragraph style: Report Heading 2 (Style ID: ReportHeading2)",
+    "Unrecognised paragraph style: Body CN (Style ID: BodyCN)",
+    "Unrecognised paragraph style: Report Heading 3 (Style ID: ReportHeading3)"
+  ]
+}

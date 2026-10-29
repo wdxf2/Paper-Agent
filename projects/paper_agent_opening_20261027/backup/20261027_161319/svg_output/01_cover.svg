@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="cover" font-family="Microsoft YaHei, Arial, sans-serif" fill="#1F2933">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#F7F9F6" data-pptx-role="background"/>
+  <path id="grid" d="M64 36H1216 M64 688H1216 M84 36V688 M1196 36V688 M64 144H1216 M64 672H1216" fill="none" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.32" data-pptx-role="decoration"/>
+  <g id="cover-title" data-pptx-bounds="64 76 760 196">
+    <text x="64" y="102" font-size="18" font-weight="bold" fill="#2F6F7E" letter-spacing="2">01 / RESEARCH BLUEPRINT</text>
+    <text x="64" y="160" font-size="46" font-weight="bold" fill="#0E3B43">基于多智能体协同的</text>
+    <text x="64" y="212" font-size="46" font-weight="bold" fill="#0E3B43">科研文献智能综述生成系统</text>
+    <rect x="64" y="238" width="84" height="5" fill="#D97706"/>
+  </g>
+  <g id="cover-diagram" data-pptx-bounds="872 76 344 326">
+    <rect x="872" y="76" width="344" height="326" rx="12" fill="#E8EFEA"/>
+    <path d="M916 132H1172 M916 192H1172 M916 252H1172 M916 312H1172" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.8"/>
+    <path d="M964 112V338 M1044 112V338 M1124 112V338" stroke="#BED0C5" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="4,6"/>
+    <use data-icon="tabler-outline/network" x="1000" y="168" width="88" height="88" fill="#0E3B43" stroke-width="2"/>
+    <circle cx="1044" cy="212" r="88" fill="none" stroke="#0E3B43" stroke-width="1.5" stroke-dasharray="4,8"/>
+    <rect x="1000" y="319" width="88" height="26" fill="#0E3B43"/>
+    <text x="1044" y="338" text-anchor="middle" font-size="18" font-weight="bold" fill="#F7F9F6">AGENT GRAPH</text>
+    <text x="908" y="92" font-size="14" fill="#5B6770">X 872 / Y 076</text>
+    <text x="908" y="394" font-size="14" fill="#5B6770">evidence / task / trace</text>
+  </g>
+  <g id="cover-meta" data-pptx-bounds="64 534 760 110">
+    <text x="64" y="562" font-size="30" font-weight="bold" fill="#D97706">不是写得更快，而是引得更准、查得到。</text>
+    <text x="64" y="606" font-size="24" fill="#1F2933">软件工程 · 智能软件工程 / 大语言模型应用</text>
+    <text x="64" y="636" font-size="18" fill="#5B6770">开题报告 · 2026 年 10 月 · 项目组待填写</text>
+  </g>
+  <g id="footer" data-pptx-bounds="64 676 1152 24">
+    <text x="64" y="696" font-size="14" fill="#5B6770">中国科学技术大学软件学院 · 软件工程实验项目环节</text>
+    <text x="1130" y="696" text-anchor="end" font-size="14" fill="#5B6770">P01 / 14</text>
+  </g>
+</svg>

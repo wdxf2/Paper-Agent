@@ -1,0 +1,82 @@
+@startuml
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam nodesep 35
+skinparam ranksep 45
+skinparam class {
+  BackgroundColor #F7FAF7
+  BorderColor #335C40
+  ArrowColor #335C40
+}
+hide methods
+
+class "综述项目\nReviewProject" as Project {
+  projectId : UUID
+  topic : String
+  status : ProjectStatus
+  createdAt : DateTime
+}
+class "检索计划\nSearchPlan" as Plan {
+  planId : UUID
+  subqueries : List<String>
+  timeRange : DateRange
+  inclusion : List<String>
+  exclusion : List<String>
+}
+class "论文\nPaper" as Paper {
+  paperId : UUID
+  title : String
+  doi : String
+  source : SourceType
+  year : Integer
+  peerReviewed : Boolean
+}
+class "证据单元\nEvidence" as Evidence {
+  evidenceId : UUID
+  paperId : UUID
+  quote : String
+  locator : String
+  confidence : Float
+}
+class "声明\nClaim" as Claim {
+  claimId : UUID
+  text : String
+  section : String
+  supportScore : Float
+}
+class "引用\nCitation" as Citation {
+  citationId : UUID
+  claimId : UUID
+  evidenceId : UUID
+  styleKey : String
+  locator : String
+}
+class "综述草稿\nReviewDraft" as Draft {
+  draftId : UUID
+  version : Integer
+  outline : String
+  content : Text
+  status : DraftStatus
+}
+class "任务运行\nTaskRun" as Task {
+  taskId : UUID
+  type : TaskType
+  status : TaskStatus
+  attempts : Integer
+  startedAt : DateTime
+  finishedAt : DateTime
+}
+
+Project "1" *-- "1" Plan : 制定
+Plan "1" -- "0..*" Paper : 召回
+Paper "1" *-- "1..*" Evidence : 切分并定位
+Evidence "0..*" -- "0..*" Claim : 支撑
+Claim "1" -- "1..*" Citation : 引用
+Citation "1" -- "1" Evidence : 指向
+Project "1" *-- "0..*" Draft : 生成
+Draft "1" *-- "1..*" Claim : 包含
+Project "1" *-- "0..*" Task : 调度
+@enduml

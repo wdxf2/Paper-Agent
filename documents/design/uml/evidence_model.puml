@@ -1,0 +1,49 @@
+@startuml
+left to right direction
+skinparam dpi 220
+skinparam defaultFontName "Microsoft YaHei"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam nodesep 30
+skinparam ranksep 40
+skinparam class {
+  BackgroundColor #F7FAF7
+  BorderColor #335C40
+  ArrowColor #335C40
+}
+hide methods
+
+class "论文\nPaper" as Paper {
+  paperId : UUID
+  title : String
+  doi : String
+}
+class "证据单元\nEvidence" as Evidence {
+  evidenceId : UUID
+  quote : String
+  locator : String
+  confidence : Float
+}
+class "声明\nClaim" as Claim {
+  claimId : UUID
+  text : String
+  section : String
+  supportScore : Float
+}
+class "引用\nCitation" as Citation {
+  citationId : UUID
+  styleKey : String
+  locator : String
+}
+class "综述草稿\nReviewDraft" as Draft {
+  draftId : UUID
+  version : Integer
+}
+
+Paper "1" *-- "1..*" Evidence : 定位
+Evidence "0..*" -- "0..*" Claim : 支撑
+Claim "1" -- "1..*" Citation : 绑定
+Citation "1" -- "1" Evidence : 指向
+Draft "1" *-- "1..*" Claim : 包含
+@enduml

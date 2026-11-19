@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Runtime data and secrets
+.env
+data/*.db
+data/*.db-*
+data/probe.db*
+*.log
+
+# Local tooling
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+paper_review_agent/_probe.py
+
+# User-provided local papers
+local_papers/inbox/*
+!local_papers/inbox/.gitkeep

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-review-agent"
+version = "0.1.0"
+description = "CrewAI-based evidence-grounded scientific literature review generator"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "crewai>=1.15,<2",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1",
+  "httpx>=0.27,<1",
+  "pydantic>=2.8,<3",
+  "pydantic-settings>=2.3,<3",
+  "python-dotenv>=1.0,<2",
+  "pdfplumber>=0.11,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+paper-review-agent = "paper_review_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["paper_review_agent*"]
+
+[tool.setuptools.package-data]
+paper_review_agent = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["integration: slower end-to-end tests"]

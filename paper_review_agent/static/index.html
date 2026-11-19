@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>科研文献智能综述生成系统</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="paper-grid" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="返回首页">
+      <span class="brand-mark">RA</span>
+      <span>
+        <strong>科研综述智能体</strong>
+        <small>Evidence-grounded Review Agent</small>
+      </span>
+    </a>
+    <div class="topbar-actions">
+      <a class="nav-link" href="#/" id="nav-home">新建任务</a>
+      <a class="nav-link" href="#/tasks" id="nav-tasks">任务记录</a>
+      <span class="status-chip" id="health-chip">检查环境</span>
+    </div>
+  </header>
+
+  <main id="app">
+    <section id="start-view" class="view">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CrewAI · Multi-agent · Traceable RAG</p>
+          <h1>让每个综述结论，<br>都能回到原文证据。</h1>
+          <p class="lead">
+            从研究主题出发，检索 arXiv / PubMed 候选文献，由四类专业智能体完成单篇分析、跨文献融合与结构化撰写。
+            正文引用逐条绑定证据片段，结构校验通过后才发布报告。
+          </p>
+          <div class="hero-signals">
+            <span>四阶段协作</span><span>引用可定位</span><span>失败不伪造</span><span>评价可追踪</span>
+          </div>
+        </div>
+        <form id="task-form" class="panel task-form">
+          <div class="panel-heading">
+            <div><p class="eyebrow">New review task</p><h2>创建综述任务</h2></div>
+            <span class="step-badge">01</span>
+          </div>
+          <label class="field">
+            <span>研究主题</span>
+            <textarea id="topic" name="topic" rows="4" maxlength="200" placeholder="例如：面向科研文献的检索增强生成与引用核验方法" required></textarea>
+            <small><span id="topic-count">0</span>/200</small>
+          </label>
+          <label class="field">
+            <span>检索关键词 / 分析提示（可选）</span>
+            <input id="keywords" name="keywords" maxlength="400" placeholder="用逗号分隔，例如：RAG, citation verification, 多智能体">
+            <small>模型会据此扩展检索式并逐篇筛选</small>
+          </label>
+          <div class="field-row">
+            <label class="field"><span>起始年份</span><input id="year-start" name="year_start" type="number" min="1900" max="2026" value="2020"></label>
+            <label class="field"><span>结束年份</span><input id="year-end" name="year_end" type="number" min="1900" max="2026" value="2026"></label>
+            <label class="field compact-field"><span>候选上限</span><input id="candidate-limit" name="candidate_limit" type="number" min="1" max="50" value="10"></label>
+          </div>
+          <fieldset class="source-fieldset">
+            <legend>学术数据源</legend>
+            <label class="check-card"><input type="checkbox" name="sources" value="arxiv" checked><span><strong>arXiv</strong><small>预印本元数据与摘要</small></span></label>
+            <label class="check-card"><input type="checkbox" name="sources" value="pubmed" checked><span><strong>PubMed</strong><small>生物医学元数据与摘要</small></span></label>
+            <label class="check-card local-source-card"><input type="checkbox" name="sources" value="local"><span><strong>本地论文文件夹</strong><small>读取 local_papers/inbox/ 中的 PDF、TXT、MD；不发起在线检索</small></span></label>
+          </fieldset>
+          <p class="form-note">在线模式会先规划英文检索式并筛选候选；本地模式直接读取文件夹全文。两种模式不能同时选择。</p>
+          <button class="primary-button" type="submit"><span>检索候选文献</span><span class="button-arrow">→</span></button>
+          <p id="form-error" class="inline-error" role="alert"></p>
+        </form>
+      </div>
+
+      <section class="history-section">
+        <div class="section-heading"><div><p class="eyebrow">Workspace</p><h2>最近任务</h2></div><button id="refresh-tasks" class="ghost-button" type="button">刷新</button></div>
+        <div id="task-list" class="task-list empty-state">暂无任务记录。</div>
+      </section>
+    </section>
+
+    <section id="tasks-view" class="view hidden">
+      <div class="section-heading page-heading"><div><p class="eyebrow">Workspace</p><h1>任务记录</h1></div><button id="refresh-tasks-page" class="ghost-button" type="button">刷新</button></div>
+      <div id="task-list-page" class="task-list empty-state">暂无任务记录。</div>
+    </section>
+
+    <section id="task-view" class="view hidden">
+      <div class="task-header">
+        <div>
+          <a href="#/tasks" class="back-link">← 返回任务记录</a>
+          <p class="eyebrow" id="task-id-label">TASK</p>
+          <h1 id="task-topic">任务加载中</h1>
+          <div id="task-meta" class="meta-row"></div>
+        </div>
+        <div class="status-card">
+          <span class="status-label">当前阶段</span>
+          <strong id="task-status">—</strong>
+          <div class="progress-track"><span id="task-progress"></span></div>
+          <small id="task-updated">—</small>
+        </div>
+      </div>
+
+      <div id="task-error" class="alert error hidden"></div>
+      <div id="task-warnings" class="warning-stack"></div>
+
+      <div class="task-layout">
+        <aside class="stage-panel panel">
+          <div class="panel-heading"><div><p class="eyebrow">Agent pipeline</p><h2>协作阶段</h2></div></div>
+          <ol id="agent-timeline" class="agent-timeline"></ol>
+          <div class="stage-note"><strong>完成门槛</strong><p>四章节齐全、事实性声明绑定证据、引用全部可解析且归属一致，才会发布报告。</p></div>
+        </aside>
+
+        <div class="workspace-panel">
+          <section id="candidate-section" class="panel hidden">
+            <div class="panel-heading"><div><p class="eyebrow">Candidate review</p><h2>确认综述材料</h2></div><span id="candidate-count" class="count-badge">0 篇</span></div>
+            <p id="candidate-intro" class="panel-intro">候选来自模型规划的多条检索式，并经过逐篇相关性筛选。仅选择具备可定位摘要或全文证据的文献；确认后选择快照固定。</p>
+            <section id="search-plan-panel" class="search-plan-panel hidden">
+              <div class="search-plan-heading"><strong id="search-plan-heading-label">本次检索策略</strong><span id="screening-mode-badge" class="badge"></span></div>
+              <p id="search-plan-rationale"></p>
+              <ul id="search-plan-queries"></ul>
+            </section>
+            <div id="candidate-list" class="candidate-list"></div>
+            <div class="confirm-bar"><span id="selected-summary">已选择 0 篇</span><button id="confirm-button" class="primary-button" type="button" disabled>开始生成综述</button></div>
+          </section>
+
+          <section id="generation-section" class="panel hidden">
+            <div class="processing-hero">
+              <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div><p class="eyebrow">Generation in progress</p><h2 id="generation-title">智能体正在协作</h2><p id="generation-message">状态与阶段变化会实时更新。</p></div>
+            </div>
+          </section>
+
+          <section id="report-section" class="report-section hidden">
+            <div class="report-toolbar panel">
+              <div><p class="eyebrow">Completed review</p><h2 id="report-title">综述报告</h2><p id="report-coverage" class="muted"></p></div>
+              <div class="report-actions"><button id="show-report-tab" class="tab-button active" type="button">报告</button><button id="show-analysis-tab" class="tab-button" type="button">分析结果</button></div>
+            </div>
+            <div id="report-content" class="report-content"></div>
+            <div id="analysis-content" class="analysis-content hidden"></div>
+          </section>
+
+          <section id="evaluation-section" class="panel hidden">
+            <div class="panel-heading"><div><p class="eyebrow">Quality evaluation</p><h2>领域评审记录</h2></div><span class="count-badge">量表 v1.0</span></div>
+            <form id="evaluation-form" class="evaluation-form">
+              <label class="field"><span>评审人标识</span><input id="reviewer-id" maxlength="100" placeholder="例如：reviewer-01" required></label>
+              <div id="score-fields" class="score-grid"></div>
+              <label class="field"><span>评语</span><textarea id="review-comments" rows="3" maxlength="4000" placeholder="记录遗漏、引用问题或结构建议"></textarea></label>
+              <button class="secondary-button" type="submit">保存评价</button><p id="evaluation-message" class="form-note"></p>
+            </form>
+            <div id="evaluation-list" class="evaluation-list"></div>
+          </section>
+
+          <section id="failed-section" class="panel alert error hidden">
+            <div><p class="eyebrow">Task failed</p><h2>任务未完成</h2><p id="failed-message"></p></div>
+            <button id="retry-button" class="secondary-button" type="button">新建关联重试任务</button>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="evidence-drawer" class="evidence-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-drawer></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="evidence-title">
+      <button class="drawer-close" type="button" data-close-drawer aria-label="关闭证据面板">×</button>
+      <p class="eyebrow">Evidence trace</p><h2 id="evidence-title">证据片段</h2>
+      <blockquote id="evidence-quote"></blockquote>
+      <dl class="evidence-meta">
+        <div><dt>定位</dt><dd id="evidence-locator"></dd></div>
+        <div><dt>范围</dt><dd id="evidence-scope"></dd></div>
+        <div><dt>文献</dt><dd id="evidence-paper"></dd></div>
+        <div><dt>来源</dt><dd id="evidence-source"></dd></div>
+      </dl>
+      <a id="evidence-link" class="secondary-button hidden" href="#" target="_blank" rel="noreferrer">打开原文献</a>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
+
